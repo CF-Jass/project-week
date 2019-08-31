@@ -1,0 +1,26 @@
+{
+  "name": "project-week",
+  "version": "1.0.0",
+  "description": "rw3tesydufgyklutiy64etesdgxfv",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CF-Jass/project-week.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CF-Jass/project-week/issues"
+  },
+  "homepage": "https://github.com/CF-Jass/project-week#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^7.12.1",
+    "superagent": "^5.1.0"
+  }
+}
