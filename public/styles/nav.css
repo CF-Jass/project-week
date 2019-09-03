@@ -75,7 +75,7 @@ z-index: -1;
   padding: 15px;
   position: absolute;
   z-index: 1;
-  background: black;
+  background: rgb(104, 104, 104);
   width: 200px;
  
 }

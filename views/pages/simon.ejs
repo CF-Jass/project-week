@@ -1,6 +1,9 @@
 <link href="./styles/digital.css" rel="stylesheet">
 <link rel="stylesheet" href="./styles/simon.css">
 <link rel="stylesheet" href="./styles/modules.css">
+<link rel="stylesheet" href="./styles/nav.css">
+
+<%- include('../layout/header.ejs') %>
 
 
 <div class="simon_container">
@@ -14,11 +17,8 @@
   </div>
 </div>
 
-<div class="share_button_container">
-  <button class="share_button" id="share_facebook" data-sharer="facebook" data-hashtag="hashtag" data-url="https://ellisonleao.github.io/sharer.js/">Share on Facebook</button>
-  <button class="share_button" id="share_whatsapp" data-sharer="whatsapp" data-title="Checkout Sharer.js!" data-url="https://ellisonleao.github.io/sharer.js/">Share on Whatsapp</button>
-  <button class="share_button" id="share_twitter" data-sharer="twitter" data-title="Checkout Sharer.js!" data-hashtags="awesome, sharer.js" data-url="https://ellisonleao.github.io/sharer.js/">Share on Twitter</button>
-</div>
 
 <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
-<script src="../js/simon.js"></script>
+<script src="js/app.js"></script>
+<script src="js/simon.js"></script>
+
