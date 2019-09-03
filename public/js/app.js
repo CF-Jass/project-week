@@ -1,7 +1,11 @@
 $(document).ready(function () {
   $('#links').hide()
   $('#sabers').click(function () {
-    $('#links').toggle();
+    $('#links').toggle().css({
+      'transition': 'transform 0.8s', 'transform': 'translate(-50px)'
+    });
+    // $('#link-box')
+
   })
 
   $('#sabers').mouseover(function () {
@@ -17,3 +21,9 @@ $(document).ready(function () {
 
 
 })
+
+
+
+// // transition: transform 0.8s;
+// // transform: translate(200px);
+// }

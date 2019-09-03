@@ -4,6 +4,7 @@ const express = require('express');
 const superagent = require('superagent');
 const pg = require('pg');
 const app = express();
+const methodOverride = require('method-override');
 require('dotenv').config();
 const PORT = process.env.PORT;
 
@@ -13,63 +14,98 @@ const client = new pg.Client(process.env.DATABASE_URL);
 client.connect();
 client.on('error', (error) => console.error(error));
 
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static('./public'));
+app.use(methodOverride((request, response) => {
+  if (request.body && typeof request.body === 'object' && '_method' in request.body) {
+    let method = request.body._method;
+    delete request.body._method;
+    return method;
+  }
+}));
+
 
 //routes
-app.get('/trivia', renderQuestion);
+app.get('/', home);
+app.get('/start', loadUsername);
+app.post('/save-username', loadGame)
+app.get('/quiz', loadGame);
+app.post('/submit', validateAnswer);
+app.get('/scores', loadScores);
 
 
-//constructors
+app.get('*', (req, res) => { res.status(404).render('pages/error') });
 
-// function Question(category, type, difficulty, question, correct_answer, answers) {
-//   this.category = category;
-//   this.type = type;
-//   this.difficulty = difficulty;
-//   this.question = question;
-//   this.correct_answer = correct_answer;
-//   this.answers = answers;
-// }
+//global vars
+const dummyData = require('./data/dummyData.json');
+let recentQuestion = [];
+let numOfCorrectAnswers = 0;
 
 //functions
+function home(req, res) {
+  recentQuestion = [];
+  res.render('./pages/index');
+}
 
-// Find way to keep same question from appearing again
-function renderQuestion(request, response) {
-  try {
-    const questionData = require('./data/trivia.json');
-    const randomQuestion = getRandomArrayEntry(questionData.trivia);
-    const randomizedAnswers = shuffleArray(randomQuestion.answers);
-    console.log('randomized answers', randomizedAnswers);
+function loadUsername(req, res) {
+  res.render('./pages/username');
+  // console.log(req.body);
+}
+
+function validateAnswer(req, res) {
+  let selectedAnswer = req.body.answer
+  if (selectedAnswer === 'yes') {
+    numOfCorrectAnswers++;
+  }
+  // res.redirect('/quiz');
+}
+
+let username;
+function loadGame(req, res) {
+  if (recentQuestion.length >= 20) {
+    let sqlInsert = 'INSERT INTO highscores (username, date, score) VALUES ($1, $2, $3);'
+    let sqlArray = [username, new Date(Date.now()).toDateString(), numOfCorrectAnswers]
+    client.query(sqlInsert, sqlArray);
+    recentQuestion = [];
+    numOfCorrectAnswers = 0;
+    res.redirect('/scores');
+  } else {
+    if (!username) {
+      username = req.body.username;
+    }
+    let getRandomQuestion = getUniqueIndex();
+    let singleQuestion = dummyData[getRandomQuestion];
     superagent
       .post('https://api.funtranslations.com/translate/yoda.json')
-      .send({ text: randomQuestion.question })
+      .send({ text: singleQuestion.question })
       .set('X-Funtranslations-Api-Secret', process.env.YODA_API)
       .set('Accept', 'application/json')
-      .then(res => {
-        console.error('yay got ' + JSON.stringify(res.body.contents.translated));
-        response.render('./pages/trivia', { questionData: res.body.contents.translated, answers: randomizedAnswers });
-      });
-
-  } catch (error) {
-    console.error(error);
-    response.status(500).send('Something went wrong!');
+      .then(responseFromSuper => res.render('./pages/trivia', { questionData: responseFromSuper.body.contents.translated, dummyData: singleQuestion, recentQuestion: recentQuestion, username: username }));
   }
 }
 
-function getRandomArrayEntry(array) {
-  const randomEntry = array[Math.floor(Math.random() * array.length)];
-  return randomEntry;
+function loadScores(req, res) {
+  client.query('SELECT * FROM highscores ORDER BY score desc').then(resultFromSQL => {
+    res.render('./pages/scores', { scores: resultFromSQL.rows });
+  })
 }
 
-function shuffleArray(array) {
-  var currentIndex = array.length, temporaryValue, randomIndex;
-  while (0 !== currentIndex) {
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
-  }
-  return array;
+//helper functions
+function getRandomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
 }
+
+function getUniqueIndex() {
+  let randomIndex = getRandomNumber(0, dummyData.length - 1);
+  while (recentQuestion.includes(randomIndex)) {
+    randomIndex = getRandomNumber(0, dummyData.length);
+  }
+  if (recentQuestion.length > dummyData.length) {
+    recentQuestion.shift();
+  }
+  recentQuestion.push(randomIndex);
+  return randomIndex;
+}
+
 
 app.listen(PORT, () => console.log(`Server is live on ${PORT}`));

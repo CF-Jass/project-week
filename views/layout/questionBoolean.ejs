@@ -1,0 +1,21 @@
+<% function getRandomNumber(min, max) { %>
+  <%  return Math.floor(Math.random() * (max - min)) + min; %>
+  <% } %>
+  <% let recentQuestion = []; %>
+  <% function getUniqueIndex() { %>
+  <%  let randomIndex = getRandomNumber(0, dummyData.answers.length - 1); %>
+  <%  while (recentQuestion.includes(randomIndex)) { %>
+  <%    randomIndex = getRandomNumber(0, dummyData.answers.length); %>
+  <%  } %>
+  <%  if (recentQuestion.length > dummyData.answers.length) { %>
+  <%    recentQuestion.shift(); %>
+  <%  } %>
+  <%  recentQuestion.push(randomIndex); %>
+  <%  return randomIndex; %>
+  <% } %>
+  
+  
+  <% for (let i = 0; i < dummyData.answers.length; i++) { %>
+    <% let randomQuestionNumber = getUniqueIndex(); %>
+  <button name="answer" value="<%=dummyData.answers[randomQuestionNumber].correct%>"><%= dummyData.answers[randomQuestionNumber].value %></button>
+  <% } %>
