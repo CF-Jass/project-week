@@ -3,6 +3,7 @@
     "id" : 1,
     "question" : "What's the name of Han Solo's ship?",
     "questionType" : "multiple",
+    "difficulty" : "easy",
     "answers" : [
       {"value" : "Millennium Falcon", "correct" : "yes"},
       {"value" : "Jon", "correct" : "no"},
@@ -14,6 +15,7 @@
     "id" : 2,
     "question" : "Which young Jedi Knight becomes Darth Vader in Star Wars?",
     "questionType" : "multiple",
+    "difficulty" : "easy",
     "answers" : [
       {"value" : "Luke Skywalker", "correct" : "yes"},
       {"value" : "Boba Fett", "correct" : "no"},
@@ -25,6 +27,7 @@
     "id" : 3,
     "question" : "Which Star Wars movie was filmed entirely in the studio",
     "questionType" : "multiple",
+    "difficulty" : "medium",
     "answers" : [
       {"value" : "Revenge of the Sith", "correct" : "yes"},
       {"value" : "Return of the Jedi", "correct" : "no"},
@@ -36,6 +39,7 @@
     "id" : 4,
     "question" : "Which of the three main heroes (Luke, Leia, and Han Solo) in the first Star Wars trilogy refused to sign a three picture deal?",
     "questionType" : "multiple",
+    "difficulty" : "medium",
     "answers" : [
       {"value" : "Harrison Ford", "correct" : "yes"},
       {"value" : "Mark Hamill", "correct" : "no"},
@@ -47,6 +51,7 @@
     "id" : 5,
     "question" : "What color is Mace Windu's lightsaber?",
     "questionType" : "multiple",
+    "difficulty" : "easy",
     "answers" : [
       {"value" : "Purple", "correct" : "yes"},
       {"value" : "Black", "correct" : "no"},
@@ -58,6 +63,7 @@
     "id" : 6,
     "question" : "The Star Wars Holiday Special marked the first appearance of which Star Wars character?",
     "questionType" : "multiple",
+    "difficulty" : "medium",
     "answers" : [
       {"value" : "Boba Fett", "correct" : "yes"},
       {"value" : "Jabba the Hutt", "correct" : "no"},
@@ -69,6 +75,7 @@
     "id" : 7,
     "question" : "What actor pulled out of Episode III: Revenge of the Sith when he discovered that non-union actors were being used in the film?",
     "questionType" : "multiple",
+    "difficulty" : "medium",
     "answers" : [
       {"value" : "Gary Oldman", "correct" : "yes"},
       {"value" : "George Clooney", "correct" : "no"},
@@ -80,6 +87,7 @@
     "id" : 8,
     "question" : "Who is the only non Jedi in the original Star Wars trilogy to use a lightsaber?",
     "questionType" : "multiple",
+    "difficulty" : "easy",
     "answers" : [
       {"value" : "Han Solo", "correct" : "yes"},
       {"value" : "Princess Leia", "correct" : "no"},
@@ -89,126 +97,278 @@
   },
   {
     "id" : 9,
-    "question" : "True or False:  Something something something... something something, something?",
-    "questionType" : "boolean",
+    "question" : "In Episode VI: Return of the Jedi, the growls and sounds of the Rancor in Jabba's Palace were actually made by what animal?",
+    "questionType" : "multiple",
+    "difficulty" : "medium",
     "answers" : [
-      {"value" : "False", "correct" : "yes"},
-      {"value" : "True", "correct" : "no"}
+      {"value" : "Dachsund", "correct" : "yes"},
+      {"value" : "Wolverine", "correct" : "no"}
+      {"value" : "Pigeon", "correct" : "no"}
+      {"value" : "Panther", "correct" : "no"}
       ]
   },
   {
     "id" : 10,
-    "question" : "True or False:  Something something something, something again, more somethings.  And then another something!",
-    "questionType" : "boolean",
+    "question" : "Who served as Jabba the Hutt's chief of staff?",
+    "questionType" : "multiple",
+    "difficulty" : "easy",
     "answers" : [
-      {"value" : "True", "correct" : "yes"},
-      {"value" : "False", "correct" : "no"}
+      {"value" : "Bib Fortuna", "correct" : "yes"},
+      {"value" : "Nute Gunray", "correct" : "no"}
+      {"value" : "Maz Kanata", "correct" : "no"}
+      {"value" : "Sarlacc", "correct" : "no"}
       ]
   },
   {
     "id" : 11,
-    "question" : "What's the name of Han Solo's ship?",
+    "question" : "What odds does C-3P0 give Han for successfully navigating the asteroid field?",
     "questionType" : "multiple",
+    "difficulty": "medium",
     "answers" : [
-      {"value" : "Millennium Falcon", "correct" : "yes"},
-      {"value" : "Jon", "correct" : "no"},
-      {"value" : "Susanna", "correct" : "no"},
-      {"value" : "Sarah", "correct" : "no"}
+      {"value" : "3,720 to 1", "correct" : "yes"},
+      {"value" : "316,000 to 1", "correct" : "no"},
+      {"value" : "3,056,0000 to 1", "correct" : "no"},
+      {"value" : "45,000 to 1", "correct" : "no"}
       ]
   },
   {
     "id" : 12,
-    "question" : "Which young Jedi Knight becomes Darth Vader in Star Wars?",
+    "question" : "What were Luke's aunt and uncle's job on Tatooine?",
     "questionType" : "multiple",
+    "difficulty": "easy",
     "answers" : [
-      {"value" : "Luke Skywalker", "correct" : "yes"},
-      {"value" : "Boba Fett", "correct" : "no"},
-      {"value" : "Darth Vader", "correct" : "no"},
-      {"value" : "Peter Carmichael", "correct" : "no"}
+      {"value" : "Moisture farmers", "correct" : "yes"},
+      {"value" : "Scavengers", "correct" : "no"},
+      {"value" : "Merchants", "correct" : "no"},
+      {"value" : "Droid Refurbishment", "correct" : "no"}
       ]
   },
   {
     "id" : 13,
-    "question" : "Which Star Wars movie was filmed entirely in the studio",
+    "question" : "In how many languages is C-3P0 fluent?",
     "questionType" : "multiple",
+    "difficulty": "medium",
     "answers" : [
-      {"value" : "Revenge of the Sith", "correct" : "yes"},
-      {"value" : "Return of the Jedi", "correct" : "no"},
-      {"value" : "Star Wars", "correct" : "no"},
-      {"value" : "Attack of the Clones", "correct" : "no"}
+      {"value" : "More than 6 million", "correct" : "yes"},
+      {"value" : "More than 6,000", "correct" : "no"},
+      {"value" : "More than 60,000", "correct" : "no"},
+      {"value" : "More than 600,000", "correct" : "no"}
       ]
   },
   {
     "id" : 14,
-    "question" : "Which of the three main heroes (Luke, Leia, and Han Solo) in the first Star Wars trilogy refused to sign a three picture deal?",
+    "question" : "What is the Wookiee's home world?",
     "questionType" : "multiple",
+    "difficulty": "medium",
     "answers" : [
-      {"value" : "Harrison Ford", "correct" : "yes"},
-      {"value" : "Mark Hamill", "correct" : "no"},
-      {"value" : "Carrie Fisher", "correct" : "no"},
-      {"value" : "They all signed", "correct" : "no"}
+      {"value" : "Kashyyyk", "correct" : "yes"},
+      {"value" : "Ikkrukk", "correct" : "no"},
+      {"value" : "Kril'Dor", "correct" : "no"},
+      {"value" : "Najra-Va", "correct" : "no"}
       ]
   },
   {
     "id" : 15,
-    "question" : "What color is Mace Windu's lightsaber?",
+    "question" : "Which species stole the plans to the Death Star?",
     "questionType" : "multiple",
+    "difficulty": "medium",
     "answers" : [
-      {"value" : "Purple", "correct" : "yes"},
-      {"value" : "Black", "correct" : "no"},
-      {"value" : "Blue", "correct" : "no"},
-      {"value" : "Green", "correct" : "no"}
+      {"value" : "Bothans", "correct" : "yes"},
+      {"value" : "Chiss", "correct" : "no"},
+      {"value" : "Ewoks", "correct" : "no"},
+      {"value" : "Mon Calamari", "correct" : "no"}
       ]
   },
   {
     "id" : 16,
-    "question" : "The Star Wars Holiday Special marked the first appearance of which Star Wars character?",
+    "question" : "What is the name of Boba Fett's ship?",
     "questionType" : "multiple",
+    "difficulty": "medium",
     "answers" : [
-      {"value" : "Boba Fett", "correct" : "yes"},
-      {"value" : "Jabba the Hutt", "correct" : "no"},
-      {"value" : "Jar Jar Binks", "correct" : "no"},
-      {"value" : "Lando Carlrissian", "correct" : "no"}
+      {"value" : "Slave 1", "correct" : "yes"},
+      {"value" : "Ghost", "correct" : "no"},
+      {"value" : "Outrider", "correct" : "no"},
+      {"value" : "Ebon Hawk", "correct" : "no"}
       ]
   },
   {
     "id" : 17,
-    "question" : "What actor pulled out of Episode III: Revenge of the Sith when he discovered that non-union actors were being used in the film?",
+    "question" : "What is the first Star Wars film in which Yoda is completely computer-generated?",
     "questionType" : "multiple",
+    "difficulty": "easy",
     "answers" : [
-      {"value" : "Gary Oldman", "correct" : "yes"},
-      {"value" : "George Clooney", "correct" : "no"},
-      {"value" : "Gary Coleman", "correct" : "no"},
-      {"value" : "Mel Gibson", "correct" : "no"}
+      {"value" : "Attack of the Clones", "correct" : "yes"},
+      {"value" : "Empire Strikes Back", "correct" : "no"},
+      {"value" : "Phantom Menice", "correct" : "no"},
+      {"value" : "Revenge of the Sith", "correct" : "no"}
       ]
   },
   {
     "id" : 18,
-    "question" : "Who is the only non Jedi in the original Star Wars trilogy to use a lightsaber?",
+    "question" : "Which bounty hunter in The Empire Strikes Back is wearing an old costume from a Doctor Who episode?",
     "questionType" : "multiple",
+    "difficulty": "difficult",
     "answers" : [
-      {"value" : "Han Solo", "correct" : "yes"},
-      {"value" : "Princess Leia", "correct" : "no"},
-      {"value" : "Chewbacca", "correct" : "no"},
-      {"value" : "R2-D2", "correct" : "no"}
+      {"value" : "Bossk", "correct" : "yes"},
+      {"value" : "Boba Fett", "correct" : "no"},
+      {"value" : "IG-88", "correct" : "no"},
+      {"value" : "Dengar", "correct" : "no"}
       ]
   },
   {
     "id" : 19,
-    "question" : "True or False:  Something something something... something something, something?",
-    "questionType" : "boolean",
+    "question" : "The animators who brought the AT-AT Imperial Walkers to life in Episode V: The Empire Strikes Back based their movements on what kind of animal?",
+    "questionType" : "multiple",
+    "difficulty": "easy",
     "answers" : [
-      {"value" : "False", "correct" : "yes"},
-      {"value" : "True", "correct" : "no"}
+      {"value" : "Elephant", "correct" : "yes"},
+      {"value" : "Giraffe", "correct" : "no"},
+      {"value" : "Stork", "correct" : "no"},
+      {"value" : "Camel", "correct" : "no"}
       ]
   },
   {
     "id" : 20,
-    "question" : "True or False:  Something something something, something again, more somethings.  And then another something!",
-    "questionType" : "boolean",
+    "question" : "Of whom did Jabba the Hutt say: 'This bounty hunter is my kind of scum ... fearless and inventive'?",
+    "questionType" : "multiple",
+    "difficulty": "medium",
     "answers" : [
-      {"value" : "True", "correct" : "yes"},
-      {"value" : "False", "correct" : "no"}
+      {"value" : "Princess Leia", "correct" : "yes"},
+      {"value" : "Boba Fett", "correct" : "no"},
+      {"value" : "Hans Solo", "correct" : "no"},
+      {"value" : "Asajj Ventress", "correct" : "no"}
+      ]
+  },
+  {
+    "id" : 21,
+    "question" : "What is the name of Boba Fett's ship?",
+    "questionType" : "multiple",
+    "difficulty": "easy",
+    "answers" : [
+      {"value" : "Slave 1", "correct" : "yes"},
+      {"value" : "Tantive 4", "correct" : "no"},
+      {"value" : "Ebon Hawk", "correct" : "no"},
+      {"value" : "Ravager", "correct" : "no"}
+      ]
+  },
+  {
+    "id" : 22,
+    "question" : "What sort of business did Luke's Uncle Owen run?",
+    "questionType" : "multiple",
+    "difficulty": "easy",
+    "answers" : [
+      {"value" : "Moisture Farm", "correct" : "yes"},
+      {"value" : "Droid Repair", "correct" : "no"},
+      {"value" : "Cantina", "correct" : "no"},
+      {"value" : "Speeder Repair Shop", "correct" : "no"}
+      ]
+  },
+  {
+    "id" : 23,
+    "question" : "Which character said: 'Why, you slimy, double-crossing, no-good swindler'?",
+    "questionType" : "multiple",
+    "difficulty": "medium",
+    "answers" : [
+      {"value" : "Lando Calrissian", "correct" : "yes"},
+      {"value" : "Luke Skywalker", "correct" : "no"},
+      {"value" : "Hans Solo", "correct" : "no"},
+      {"value" : "Leia Organa", "correct" : "no"}
+      ]
+  },
+  {
+    "id" : 24,
+    "question" : "What is Count Dooku's Sith name?",
+    "questionType" : "multiple",
+    "difficulty": "medium",
+    "answers" : [
+      {"value" : "Darth Tyranus", "correct" : "yes"},
+      {"value" : "Darth Maul", "correct" : "no"},
+      {"value" : "Darth Sidious", "correct" : "no"},
+      {"value" : "Darth Nihilus", "correct" : "no"}
+      ]
+  },
+  {
+    "id" : 25,
+    "question" : "Who plays Chewbacca in the original Star Wars trilogy?",
+    "questionType" : "multiple",
+    "difficulty": "medium",
+    "answers" : [
+      {"value" : "Peter Mayhew", "correct" : "yes"},
+      {"value" : "Kenny Baker", "correct" : "no"},
+      {"value" : "Anthony Daniels", "correct" : "no"},
+      {"value" : "David Prowse", "correct" : "no"}
+      ]
+  },
+  {
+    "id" : 26,
+    "question" : "Which Golden Girl played the role of Ackmena, the nightshift bartender in the Star Wars Holiday Special?",
+    "questionType" : "multiple",
+    "difficulty": "medium",
+    "answers" : [
+      {"value" : "Bea Arthur", "correct" : "yes"},
+      {"value" : "Betty White", "correct" : "no"},
+      {"value" : "Rue McClanahan", "correct" : "no"},
+      {"value" : "Estella Getty", "correct" : "no"}
+      ]
+  },
+  {
+    "id" : 27,
+    "question" : "Who did Obi-Wan Kenobi defeat in the Battle of Naboo?",
+    "questionType" : "multiple",
+    "difficulty": "medium",
+    "answers" : [
+      {"value" : "Darth Maul", "correct" : "yes"},
+      {"value" : "Darth Tyranus", "correct" : "no"},
+      {"value" : "Darth Sidious", "correct" : "no"},
+      {"value" : "Darth Malak", "correct" : "no"}
+      ]
+  },
+  {
+    "id" : 28,
+    "question" : "Which species stole the plans to the Death Star?",
+    "questionType" : "multiple",
+    "difficulty": "easy",
+    "answers" : [
+      {"value" : "Bothans", "correct" : "yes"},
+      {"value" : "Mynocks", "correct" : "no"},
+      {"value" : "Selonians", "correct" : "no"},
+      {"value" : "Khommites", "correct" : "no"}
+      ]
+  },
+  {
+    "id" : 29,
+    "question" : "What Wookie Jedi Master was renowned for his ability to sense the future?",
+    "questionType" : "multiple",
+    "difficulty": "easy",
+    "answers" : [
+      {"value" : "Tyvokka", "correct" : "yes"},
+      {"value" : "Krrsantan", "correct" : "no"},
+      {"value" : "Hanharr", "correct" : "no"},
+      {"value" : "Gungi", "correct" : "no"}
+      ]
+  },
+  {
+    "id" : 30,
+    "question" : "What Wookie bounty hunter was nicknamed 'madclaw'?",
+    "questionType" : "multiple",
+    "difficulty": "easy",
+    "answers" : [
+      {"value" : "Tyvokka", "correct" : "yes"},
+      {"value" : "Krrsantan", "correct" : "no"},
+      {"value" : "Hanharr", "correct" : "no"},
+      {"value" : "Gungi", "correct" : "no"}
+      ]
+  },
+  {
+    "id" : 31,
+    "question" : "What ocean planet was first introduced in the Star Wars Holiday Special?",
+    "questionType" : "multiple",
+    "difficulty": "medium",
+    "answers" : [
+      {"value" : "Panna", "correct" : "yes"},
+      {"value" : "Dagobah", "correct" : "no"},
+      {"value" : "Florrum", "correct" : "no"},
+      {"value" : "Kamino", "correct" : "no"}
       ]
   }
 ]
