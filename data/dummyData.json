@@ -102,8 +102,8 @@
     "difficulty" : "medium",
     "answers" : [
       {"value" : "Dachsund", "correct" : "yes"},
-      {"value" : "Wolverine", "correct" : "no"}
-      {"value" : "Pigeon", "correct" : "no"}
+      {"value" : "Wolverine", "correct" : "no"},
+      {"value" : "Pigeon", "correct" : "no"},
       {"value" : "Panther", "correct" : "no"}
       ]
   },
@@ -114,8 +114,8 @@
     "difficulty" : "easy",
     "answers" : [
       {"value" : "Bib Fortuna", "correct" : "yes"},
-      {"value" : "Nute Gunray", "correct" : "no"}
-      {"value" : "Maz Kanata", "correct" : "no"}
+      {"value" : "Nute Gunray", "correct" : "no"},
+      {"value" : "Maz Kanata", "correct" : "no"},
       {"value" : "Sarlacc", "correct" : "no"}
       ]
   },
@@ -372,4 +372,5 @@
       ]
   }
 ]
+
 
