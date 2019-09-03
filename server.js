@@ -28,7 +28,7 @@ app.use(methodOverride((request, response) => {
 //routes
 app.get('/', home);
 app.get('/start', loadUsername);
-app.post('/save-username', loadGame)
+app.post('/save-username', loadGamePage)
 app.get('/quiz', loadGame);
 app.post('/submit', validateAnswer);
 app.get('/scores', loadScores);
@@ -58,6 +58,10 @@ function validateAnswer(req, res) {
     numOfCorrectAnswers++;
   }
   // res.redirect('/quiz');
+}
+
+function loadGamePage(req, res) {
+  res.render('./pages/gamepage')
 }
 
 let username;

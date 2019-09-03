@@ -1,0 +1,21 @@
+#form_container {
+  display: grid;
+  grid-template-columns: repeat(1 / 1fr);
+  grid-template-rows: repeat(2 / 1fr);
+  height: 5em;
+  width: 25em;
+  margin: 0 auto;
+}
+
+#form_username{
+  color: white;
+  font-size: 2.2em;
+  grid-column-start: 1 / span 1;
+  grid-row-start: 1 / span 1;  
+}
+
+#form_input{
+  grid-column-start: 1 / span 1;
+  grid-row-start: 2 / span 1;
+  justify-self: center;
+}
