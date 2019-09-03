@@ -8,6 +8,12 @@
 </head>
 <body>
     <%- include('../layout/header.ejs') %>
-  
+  <h1>Please enter your username</h1>
+    <form action="/save-username" method="POST">
+      <fieldset>
+        <legend>Username:</legend>
+        <input type="text" name="username" placeholder="enter username" required>
+      </fieldset>
+    </form>
 </body>
 </html>
