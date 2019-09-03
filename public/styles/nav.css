@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+}
+
+#sabers {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-right: 50px;
+ 
+}
+
+#yoda, #vader, #obi {
+  display: flex;
+  justify-content: flex-end
+}
+
+.plasma {
+  bottom: 6px;
+  background: green;
+  height: 4px;
+  width: 44px;
+  /* margin-left: 22px; */
+  z-index: -1;
+  margin-top: 15px;
+  border-radius: 3px;
+
+}
+
+.hilt {
+  display: block;
+  height: 4px;
+  width: 25px;
+  background: #DDD;
+  border-right: solid 4px gray;
+  border-left: solid 4px gray;
+  border-radius: 5px;
+  z-index: 1;
+  margin-top: 15px;
+}
+
+#vader {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  
+}
+
+
+
+#obi-plasma, #vader-plasma, #yoda-plasma {
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 0px 12px 3px rgb(233, 235, 235);
+}
+
+
+
+#links{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  filter: none;
+  width: 100%;
+  padding-top: 15px;
+}
