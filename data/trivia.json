@@ -1,0 +1,82 @@
+{
+  "trivia": [
+    {
+      "category": "C-3PO",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What odds does C-3P0 give Han for successfully navigating the asteroid field?",
+      "correct_answer": "3,720 to 1",
+      "answers": [
+        "3,720 to 1",
+        "316,000 to 1",
+        "3,056,0000 to 1",
+        "45,000 to 1"
+      ]
+    },
+    {
+      "category": "Luke",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What were Luke's aunt and uncle's job on Tatooine?",
+      "correct_answer": "Moisture farmers",
+      "answers": [
+        "Moisture farmers",
+        "Scavengers",
+        "Merchants",
+        "Droid Refurbishment"
+      ]
+    },
+    {
+      "category": "C-3PO",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In how many languages is C-3P0 fluent?",
+      "correct_answer": "More than 6 million",
+      "answers": [
+        "More than 6 million",
+        "More than 6,000",
+        "More than 60,000",
+        "More than 600,000"
+      ]
+    },
+    {
+      "category": "Chewbacca",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the Wookiee's home world?",
+      "correct_answer": "Kashyyyk",
+      "answers": [
+        "Kashyyyk",
+        "Ikkrukk",
+        "Kril'Dor",
+        "Najra-Va"
+      ]
+    },
+    {
+      "category": "C-3PO",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which species stole the plans to the Death Star?",
+      "correct_answer": "Bothans",
+      "answers": [
+        "Bothans",
+        "Chiss",
+        "Ewoks",
+        "Mon Calamari"
+      ]
+    },
+    {
+      "category": "C-3PO",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of Boba Fett's ship?",
+      "correct_answer": "Slave 1",
+      "answers": [
+        "Slave 1",
+        "Ghost",
+        "Outrider",
+        "Ebon Hawk"
+      ]
+    }
+  ]
+}
