@@ -53,9 +53,10 @@ SimonGame.prototype.verifyOrder = function (){
   return true;
 }
 
-SimonGame.prototype.lose = function (){
+SimonGame.prototype.lose = function (req, res){
   alert('you lost');
-  // this will need to be where we store the points into sql
+
+  res.redirect('/scores');
   this.isRunning = false;
 }
 
