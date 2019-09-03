@@ -16,29 +16,17 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <title>Document</title>
 </head>
-<header> <%- include('../layout/header.ejs') %></header>
+<header><%- include('../layout/header.ejs') %></header>
 
 <body>
-<<<<<<< HEAD
-
-  <div class="center-box">
-    <h1>Please enter your username</h1>
-    <form action="/save-username" method="POST">
+  <div id="form_container">
+    <h1 id="form_username">Please enter your username</h1>
+    <form id="form_input" action="/save-username" method="GET">
       <fieldset>
-        <legend>Username:</legend>
-        <input type="text" name="username" placeholder="enter username" required>
+        <legend id="form_legend"></legend>
+        <input id="form_input" type="text" name="username" placeholder="enter username" required>
       </fieldset>
     </form>
-=======
-  <div id="form_container">
-  <h1 id="form_username">Please enter your username</h1>
-  <form id="form_input" action="/save-username" method="GET">
-    <fieldset>
-      <legend id ="form_legend"></legend>
-      <input id ="form_input" type="text" name="username" placeholder="enter username" required>
-    </fieldset>
-  </form>
->>>>>>> c81fa87530d0022821d0b9b744545eb9c562e5f2
   </div>
 </body>
 <script src="js/app.js"></script>

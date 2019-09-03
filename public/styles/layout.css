@@ -1,65 +1,103 @@
-<<<<<<< HEAD
 
 
 body {
-  background-image: url('../img/starry2.jpg');
-  background-size: cover;                  
+  /* background-image: url('../img/starry2.jpg'); */
+  background: white;
   background-repeat: no-repeat;
-  color: white;
-  width: 480px;
+  color: black;
+  width: 375px;
 
 }
 
-.center-box {
+#trivia-box {
   display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+ 
+}
+
+#trivia-box form {
   justify-content: center;
 }
 
+#trivia-answers {
+  display: flex;
+  flex-direction: column;
+}
 
+#question-title {
+  text-align: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+#form_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  width: 100%;
+/* margin-left: 20px; */
+}
+
+#form_container h1 {
+  margin-right: 15px;
+
+}
+
+#choose-game {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px
+}
+
+#choose-game button {
+  margin: 25px;
+}
+
+#simon-flex {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
 
 @media (min-width: 768px) and (max-width: 960px){
   
   body {
     width: 768px;
+    background: white;
+    background-size: cover;                  
+    background-repeat: no-repeat;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
   }
 
+  #form_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+  }
+
 }
-
-
 
 @media all and (min-width: 960px){ 
 
   body {
     width: 960px;
+    background: white;
+    background-size: cover;                  
+    background-repeat: no-repeat;
     margin: auto;
-    
+  }
+
+  #form_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
   }
 }
-
-
-=======
-#form_container {
-  display: grid;
-  grid-template-columns: repeat(1 / 1fr);
-  grid-template-rows: repeat(2 / 1fr);
-  height: 5em;
-  width: 25em;
-  margin: 0 auto;
-}
-
-#form_username{
-  color: white;
-  font-size: 2.2em;
-  grid-column-start: 1 / span 1;
-  grid-row-start: 1 / span 1;  
-}
-
-#form_input{
-  grid-column-start: 1 / span 1;
-  grid-row-start: 2 / span 1;
-  justify-self: center;
-}
->>>>>>> c81fa87530d0022821d0b9b744545eb9c562e5f2

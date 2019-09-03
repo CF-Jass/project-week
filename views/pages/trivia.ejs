@@ -22,19 +22,18 @@
 
 <body>
 
-
-  <h1>Index</h1>
-
-  <div class="center-box">
-    <h2>Number of questions left: <%= (21 - recentQuestion.length) %></h2>
+  <h2 id="question-title">Number of questions left: <%= (21 - recentQuestion.length) %></h2>
+  <div id="trivia-box">
     <form action="/submit" method="POST">
       <fieldset>
-        <legend><%= questionData %></legend>
-        <% if (dummyData.questionType === 'boolean') { %>
-        <%- include('../layout/questionBoolean') %>
-        <% } else { %>
-        <%- include('../layout/questionMultiple') %>
-        <% } %>
+        <div id="trivia-answers">
+          <legend><%= questionData %></legend>
+          <% if (dummyData.questionType === 'boolean') { %>
+          <%- include('../layout/questionBoolean') %>
+          <% } else { %>
+          <%- include('../layout/questionMultiple') %>
+          <% } %>
+        </div>
       </fieldset>
     </form>
   </div>
