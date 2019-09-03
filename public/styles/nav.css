@@ -12,10 +12,10 @@ z-index: -1;
 }
 
 #sabers {
-  display: flex;
-  flex-direction: column;
+  display: flex; 
+   flex-direction: column;
   justify-content: flex-end;
-  margin-right: 50px;
+  margin-right: 25px;
  
 }
 
@@ -70,7 +70,6 @@ z-index: -1;
 }
 
 #links{
-  
   width: 100%;
   padding: 15px;
   position: absolute;
@@ -82,7 +81,7 @@ z-index: -1;
 
 #links a {
   display: block;
-  margin-right: 50px;
+  margin-right: 25px;
   margin-top: 20px;
  text-decoration: none;
  font-family: 'Montserrat', sans-serif;
