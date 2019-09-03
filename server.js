@@ -28,10 +28,12 @@ app.use(methodOverride((request, response) => {
 //routes
 app.get('/', home);
 app.get('/start', loadUsername);
-app.post('/save-username', loadGame)
+app.get('/save-username', loadGamePage)
 app.get('/quiz', loadGame);
 app.post('/submit', validateAnswer);
 app.get('/scores', loadScores);
+app.get('/triva', loadGame);
+app.get('/simon', loadSimon);
 
 
 app.get('*', (req, res) => { res.status(404).render('pages/error') });
@@ -58,6 +60,14 @@ function validateAnswer(req, res) {
     numOfCorrectAnswers++;
   }
   // res.redirect('/quiz');
+}
+
+function loadGamePage(req, res) {
+  res.render('./pages/gamepage')
+}
+
+function loadSimon(req, res) {
+  res.render('./pages/simon')
 }
 
 let username;
