@@ -6,9 +6,9 @@
     "difficulty" : "easy",
     "answers" : [
       {"value" : "Millennium Falcon", "correct" : "yes"},
-      {"value" : "Jon", "correct" : "no"},
-      {"value" : "Susanna", "correct" : "no"},
-      {"value" : "Sarah", "correct" : "no"}
+      {"value" : "Red Rising", "correct" : "no"},
+      {"value" : "Blue Moon", "correct" : "no"},
+      {"value" : "New Aged Falcon", "correct" : "no"}
       ]
   },
   {
@@ -253,14 +253,14 @@
   },
   {
     "id" : 22,
-    "question" : "What sort of business did Luke's Uncle Owen run?",
+    "question" : "What is the Wookie's home world?",
     "questionType" : "multiple",
     "difficulty": "easy",
     "answers" : [
-      {"value" : "Moisture Farm", "correct" : "yes"},
-      {"value" : "Droid Repair", "correct" : "no"},
-      {"value" : "Cantina", "correct" : "no"},
-      {"value" : "Speeder Repair Shop", "correct" : "no"}
+      {"value" : "Kashyyyk", "correct" : "yes"},
+      {"value" : "Ikkrukk", "correct" : "no"},
+      {"value" : "Kril'Dor", "correct" : "no"},
+      {"value" : "Najra-Va", "correct" : "no"}
       ]
   },
   {
@@ -453,6 +453,364 @@
       {"value" : "Lena Eivy", "correct" : "no"},
       {"value" : "Yoda", "correct" : "no"},
       {"value" : "Emporer Palpatine", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 39,
+    "question" : "Why does Yoda say that he didn't want to train Luke Skywalker",
+    "questionType" : "multiple",
+    "difficulty" : "easy",
+    "answers" : [
+      {"value" : "Because he lacked patience", "correct" : "yes"},
+      {"value" : "Because Yoda didn't like him", "correct" : "no"},
+      {"value" : "Because he smells bad", "correct" : "no"},
+      {"value" : "Because he is annoying", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 40,
+    "question" : "What is Yoda's last name?",
+    "questionType" : "multiple",
+    "difficulty" : "medium",
+    "answers" : [
+      {"value" : "He does not have one", "correct" : "yes"},
+      {"value" : "Eivy", "correct" : "no"},
+      {"value" : "Carignan", "correct" : "no"},
+      {"value" : "He doesn't like to give it out", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 41,
+    "question" : "Did Luke Skywalker own a dog?",
+    "questionType" : "boolean",
+    "difficulty" : "hard",
+    "answers" : [
+      {"value" : "true", "correct" : "yes"},
+      {"value" : "false", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 42,
+    "question" : "Was the one of the original names for Luke Skywalker, Luke Starkiller?",
+    "questionType" : "boolean",
+    "difficulty" : "medium",
+    "answers" : [
+      {"value" : "true", "correct" : "yes"},
+      {"value" : "fasle", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 43,
+    "question" : "Was Alderaan the only planet that was destroyed by the Death Star?",
+    "questionType" : "boolean",
+    "difficulty" : "medium",
+    "answers" : [
+      {"value" : "true", "correct" : "yes"},
+      {"value" : "false", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 44,
+    "question" : "Is Oceania the name of the tyrannical government that the Rebels are fighting against?",
+    "questionType" : "boolean",
+    "difficulty" : "easy",
+    "answers" : [
+      {"value" : "false", "correct" : "yes"},
+      {"value" : "true", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 45,
+    "question" : "Is it a blaster that Obi-Wan gives to Luke that once belonged to his father?",
+    "questionType" : "boolean",
+    "difficulty" : "easy",
+    "answers" : [
+      {"value" : "false", "correct" : "yes"},
+      {"value" : "true", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 46,
+    "question" : "Is it in his 30's that Anakin becomes Darth Vader?",
+    "questionType" : "boolean",
+    "difficulty" : "hard",
+    "answers" : [
+      {"value" : "fasle", "correct" : "yes"},
+      {"value" : "true", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 47,
+    "question" : "Is Padma 17-years-old when she comes queen?",
+    "questionType" : "boolean",
+    "difficulty" : "medium",
+    "answers" : [
+      {"value" : "false", "correct" : "yes"},
+      {"value" : "true", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 48,
+    "question" : "What does Yoda claim that Luke's training won't be complete until he does what?",
+    "questionType" : "multiple",
+    "difficulty" : "medium",
+    "answers" : [
+      {"value" : "Face Darth Vader", "correct" : "yes"},
+      {"value" : "Learn the truth about Leia", "correct" : "no"},
+      {"value" : "Builds a lightsaber", "correct" : "no"},
+      {"value" : "Faces off against Han", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 49,
+    "question" : "Lando lost the Millenium Falcon to Han during a:",
+    "questionType" : "multiple",
+    "difficulty" : "easy",
+    "answers" : [
+      {"value" : "bet", "correct" : "yes"},
+      {"value" : "raid", "correct" : "no"},
+      {"value" : "battle", "correct" : "no"},
+      {"value" : "loosing his keys", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 50,
+    "question" : "What is the name of Luke's best friend, who later serves beside him in the Rebellion?",
+    "questionType" : "multiple",
+    "difficulty" : "medium",
+    "answers" : [
+      {"value" : "Biggs Darklighter", "correct" : "yes"},
+      {"value" : "Wedge Antilles", "correct" : "no"},
+      {"value" : "Nien Numb", "correct" : "no"},
+      {"value" : "Jon Veach", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 51,
+    "question" : "Who does Obi-Wan learn the force from?",
+    "questionType" : "multiple",
+    "difficulty" : "medium",
+    "answers" : [
+      {"value" : "Qui-Gon Jinn", "correct" : "yes"},
+      {"value" : "Susanna Lakey", "correct" : "no"},
+      {"value" : "Mace Windu", "correct" : "no"},
+      {"value" : "Yoda", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 52,
+    "question" : "Which name does Leia not have a family connection to?",
+    "questionType" : "multiple",
+    "difficulty" : "hard",
+    "answers" : [
+      {"value" : "Fett", "correct" : "yes"},
+      {"value" : "Amidala", "correct" : "no"},
+      {"value" : "Skywalker", "correct" : "no"},
+      {"value" : "Organa", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 53,
+    "question" : "Who has the first line in A New Hope?",
+    "questionType" : "multiple",
+    "difficulty" : "hard",
+    "answers" : [
+      {"value" : "C-3P0", "correct" : "yes"},
+      {"value" : "Princess Leia", "correct" : "no"},
+      {"value" : "R2-D2", "correct" : "no"},
+      {"value" : "Sarah Gilliam", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 54,
+    "question" : "Who has the first line in Empire Strikes Back?",
+    "questionType" : "multiple",
+    "difficulty" : "hard",
+    "answers" : [
+      {"value" : "Luke Skywalker", "correct" : "yes"},
+      {"value" : "Chewbacca", "correct" : "no"},
+      {"value" : "Adrian Huebner", "correct" : "no"},
+      {"value" : "Han Solo", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 55,
+    "question" : "Luke Skywalker's self-imposed exile takes place on what planet?",
+    "questionType" : "multiple",
+    "difficulty" : "medium",
+    "answers" : [
+      {"value" : "Ach-To", "correct" : "yes"},
+      {"value" : "Takodana", "correct" : "no"},
+      {"value" : "Dagobah", "correct" : "no"},
+      {"value" : "Tatooine", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 56,
+    "question" : "Who has the first line in Return of the Jedi?",
+    "questionType" : "multiple",
+    "difficulty" : "hard",
+    "answers" : [
+      {"value" : "The random shuttle captain", "correct" : "yes"},
+      {"value" : "Yoda", "correct" : "no"},
+      {"value" : "Jabba the Hutt", "correct" : "no"},
+      {"value" : "Mace Windu", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 57,
+    "question" : "Who has the first line in The Phantom Menace?",
+    "questionType" : "multiple",
+    "difficulty" : "hard",
+    "answers" : [
+      {"value" : "Qui-Gon Jinn", "correct" : "yes"},
+      {"value" : "Obi-Wan Kenobi", "correct" : "no"},
+      {"value" : "Nute Gunray", "correct" : "no"},
+      {"value" : "Jabba the Hutt", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 58,
+    "question" : "At the beginning of A New Hope, what was Leia and her shipping carrying?",
+    "questionType" : "multiple",
+    "difficulty" : "medium",
+    "answers" : [
+      {"value" : "The secret plans to the Death Star", "correct" : "yes"},
+      {"value" : "Escaped Prisoners from the Empire", "correct" : "no"},
+      {"value" : "Untaxed death sticks", "correct" : "no"},
+      {"value" : "The main council of the Rebel Alliance", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 59,
+    "question" : "Complete a classic line: 'That's no moon; it's a...'",
+    "questionType" : "multiple",
+    "difficulty" : "medium",
+    "answers" : [
+      {"value" : "Space Station", "correct" : "yes"},
+      {"value" : "Spaceship", "correct" : "no"},
+      {"value" : "Droid", "correct" : "no"},
+      {"value" : "Time machine", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 60,
+    "question" : "How many engines does Princess Leia's ship carry in the beginning of A New Hope?",
+    "questionType" : "multiple",
+    "difficulty" : "medium",
+    "answers" : [
+      {"value" : "Eleven", "correct" : "yes"},
+      {"value" : "Fourteen", "correct" : "no"},
+      {"value" : "Ten", "correct" : "no"},
+      {"value" : "Twelve", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 61,
+    "question" : "What's on the menu for breakfast with Luke's Aunt Beru?",
+    "questionType" : "multiple",
+    "difficulty" : "easy",
+    "answers" : [
+      {"value" : "Blue Milk", "correct" : "yes"},
+      {"value" : "Red Butter", "correct" : "no"},
+      {"value" : "Purple Cereal", "correct" : "no"},
+      {"value" : "Green Toast", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 62,
+    "question" : "During the attack on the first Death Star, what is Luke's call sign?",
+    "questionType" : "multiple",
+    "difficulty" : "medium",
+    "answers" : [
+      {"value" : "Red Five", "correct" : "yes"},
+      {"value" : "Red Nine", "correct" : "no"},
+      {"value" : "Rouge Five", "correct" : "no"},
+      {"value" : "Rouge Nine", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 63,
+    "question" : "What does the acronym in TIE fighter stand for?",
+    "questionType" : "multiple",
+    "difficulty" : "hard",
+    "answers" : [
+      {"value" : "Twin Ion Engine", "correct" : "yes"},
+      {"value" : "Total Imperial Evil", "correct" : "no"},
+      {"value" : "The Imperial Evil", "correct" : "no"},
+      {"value" : "Total Imperial Engine", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 64,
+    "question" : "Which Captain recieves a battlefield promotion to Admiral when Vader force-chokes his boss before the Battle of Hoth?",
+    "questionType" : "multiple",
+    "difficulty" : "medium",
+    "answers" : [
+      {"value" : "Piett", "correct" : "yes"},
+      {"value" : "Ozzel", "correct" : "no"},
+      {"value" : "Veers", "correct" : "no"},
+      {"value" : "Rieeken", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 65,
+    "question" : "Who is the lead singer in Jabba the Hutt's house band?",
+    "questionType" : "multiple",
+    "difficulty" : "hard",
+    "answers" : [
+      {"value" : "Sy Snootles", "correct" : "yes"},
+      {"value" : "Joh Yowza", "correct" : "no"},
+      {"value" : "Droppy McCool", "correct" : "no"},
+      {"value" : "Max Reebo", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 66,
+    "question" : "What is the Emperor's name?",
+    "questionType" : "multiple",
+    "difficulty" : "easy",
+    "answers" : [
+      {"value" : "Palpatine", "correct" : "yes"},
+      {"value" : "Dooku", "correct" : "no"},
+      {"value" : "Grevious", "correct" : "no"},
+      {"value" : "Nero", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 67,
+    "question" : "What species is Jar Jar Binks?",
+    "questionType" : "multiple",
+    "difficulty" : "hard",
+    "answers" : [
+      {"value" : "Gungan", "correct" : "yes"},
+      {"value" : "Naboo", "correct" : "no"},
+      {"value" : "Toydarian", "correct" : "no"},
+      {"value" : "Neimoidian", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 68,
+    "question" : "What is the first time that we see Yoda using a lightsaber?",
+    "questionType" : "multiple",
+    "difficulty" : "medium",
+    "answers" : [
+      {"value" : "Episode II - Attack of The Clones", "correct" : "yes"},
+      {"value" : "Episode V -  The Empire Strikes Back", "correct" : "no"},
+      {"value" : "Never - Yoda does not use violence", "correct" : "no"},
+      {"value" : "Episode III - Revenge of the Sith", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 69,
+    "question" : "What is the name of the lava planet where Obi-Wan and Anakin fight at the end of Revenge of the Sith?",
+    "questionType" : "multiple",
+    "difficulty" : "medium",
+    "answers" : [
+      {"value" : "Mustafar", "correct" : "yes"},
+      {"value" : "Geonosis", "correct" : "no"},
+      {"value" : "Kamino", "correct" : "no"},
+      {"value" : "Utapuh", "correct" : "no"}
     ]
   }
 ]
