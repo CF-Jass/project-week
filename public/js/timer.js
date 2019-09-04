@@ -45,8 +45,6 @@ function Timer(start, count_from, interval, on_zero) {
     this.current--;
     let percentage = this.current / this.count_from;
     this.timer_element.width(this.outline_width * percentage);
-    console.log(`outline_width = ${this.outline_width} && percentage = ${percentage}`);
-    console.log(`this.current is ${this.current} && this.count_from is ${this.count_from}`)
     if (this.current < 0) {
       this.running = false;
       if (this.on_zero) {
@@ -75,4 +73,3 @@ $(() => {
   let calculateBlade = (test / 1000) / 300
   $('.timer_blade_actual').width(480 * calculateBlade);
 });
-
