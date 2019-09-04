@@ -53,11 +53,13 @@ SimonGame.prototype.verifyOrder = function (){
   return true;
 }
 
-SimonGame.prototype.lose = function (req, res){
-  alert('you lost');
-
-  res.redirect('/scores');
+SimonGame.prototype.lose = function() {
   this.isRunning = false;
+  $.post('/addScore', {
+    username: window.localStorage.getItem('username'), 
+    game: 'Simon', 
+    score: this.points
+  }).done(() => { console.log("done!"); window.location.pathname = '/scores'; });
 }
 
 SimonGame.prototype.updatePoints = function (){
