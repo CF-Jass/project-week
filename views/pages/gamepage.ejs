@@ -1,25 +1,27 @@
 <%- include('../layout/head.ejs') %>
 <%- include('../layout/css.ejs') %>
-  <title>Document</title>
+<title>Document</title>
 </head>
+
 <body>
   <%- include('../layout/header.ejs') %>
 
-
+  <h1 class="main-header">Choose a Game</h1>
   <div id="choose-game">
-    <form id="triva_link" class="form1" action="/triva" method="get">
-      <button>Trivia</button>
-    </form>
-
-    <form id="triva_link" class="form1" action="/simon" method="get">
-      <button>Simon</button>
-    </form>
-
+    <div id="yoda-trivia-option">
+      <img id="yoda-head" src="/img/yoda_head_shot.png" />
+      <form id="triva_link" class="form1" action="/triva" method="get">
+        <button class="button">Yoda's Trivia</button>
+      </form>
+    </div>
+    <div>
+      <img id="leia-head" src="/img/leia_head_shot.png" />
+      <form id="triva_link" class="form1" action="/simon" method="get">
+        <button class="button">Leia Says</button>
+      </form>
+    </div>
   </div>
-
-
-
-  
   <%- include('../layout/footer.ejs') %>
 </body>
+
 </html>

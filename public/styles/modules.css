@@ -1,12 +1,55 @@
 
 @import url('https://fonts.googleapis.com/css?family=Assistant&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
 
+
+
+.main-header {
+  font-family: 'Bangers', cursive;
+  font-size: 80px;
+  text-align: center;
+}
+
+#group-photo {
+  width: 60%;
+  margin-top: 8em;
+}
+
+#yoga-trivia-img {
+  margin-top: 4em;
+}
+
+#leia-head {
+  width: 60%;
+}
+
+#yoda-head {
+  width: 70%;
+}
+
+#yoda-trivia-option {
+  /* text-align: baseline; */
+}
+
+#group-container {
+  text-align: center;
+}
 
 #form_username {
   font-family: 'Assistant', sans-serif;
-  font-size: 24px;
+  font-size: 2.6em;
 }
 
+#leia-full-body {
+  height: 500px;
+}
+
+#form_input {
+  width: 50%;
+  height: 2.4em;
+  text-align: center;
+  margin: auto;
+}
 
 .share_button_container{
   display: block;

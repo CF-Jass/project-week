@@ -17,8 +17,6 @@ body {
   padding: 20px 20px;
   font-size: 24px;
   background: rgba(0, 0, 0, 0.358);
-  
- 
 }
 
 #trivia-box form {
@@ -60,7 +58,6 @@ body {
 #form_container h1 {
   margin-right: 15px;
   margin-bottom: 1.4em;
-
 }
 
 #choose-game {
@@ -73,7 +70,6 @@ body {
   margin: 25px;
 }
 
-
 #timer_container {
   z-index: -1;
   margin-top: 2em;
@@ -82,6 +78,42 @@ body {
 #timer-outer {
   width: 100%;
 }
+
+#score-box {
+  text-align: center;
+  margin-top: 150px;
+ 
+  background: rgba(0, 0, 0, 0.358);
+}
+
+#score-text {
+  font-size: 40px;
+
+}
+
+#score-text h1, #score-text h2 {
+  margin-bottom: 30px;
+}
+
+#score-table  {
+  font-size: 30px;
+  text-align: left;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  background: rgba(128, 128, 128, 0.221);
+
+}
+#score-table td {
+  padding: 40px 80px;
+}
+
+#score-table th {
+  padding: 40px 80px;
+  font-size: 40px;
+}
+
+
 
 @media (min-width: 768px) and (max-width: 960px){
   
