@@ -2,7 +2,7 @@ $(document).ready(function () {
   $('#links').hide()
   $('#sabers').click(function () {
     $('#links').toggle().css({
-      'transition': 'transform 0.8s', 'transform': 'translate(50px)'
+      'transition': 'transform 0.8s', 'transform': 'translate(50px)', 'z-index': '4'
     });
   })
 
