@@ -344,7 +344,7 @@ function getScoreForPlayerForCell(cellEl) {
 function bringDownYodaWin(){
   leaderboard.style.top = '95px';
   leaderboardMessage.innerHTML = 'Win, you have.';
-  imageSlideInYoda.style.top = '295px';
+  imageSlideInYoda.style.top = '100px';
   container.style.opacity = '0.4'; // we want to make the wheel darker so the leaderboard drop down shows up better.
 }
 
