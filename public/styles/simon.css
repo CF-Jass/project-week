@@ -1,12 +1,16 @@
-/* body {
-  background-color: rgb(29, 29, 29);
-} */
+#simon-flex{
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10em;
+  width: 100%;
+}
 
 /* This contains the simon game container */
 .simon_container {
   position: relative;
   width: 55em;
-  text-align: center;
+  margin: 0 auto;
+  display: inline-block;
 }
 
 /* This is the middle that contains the start button, points, and title */
@@ -19,9 +23,9 @@
   flex-direction: column;
   height: 15em;
   /* justify-content: center; */
-  left: 20em;
+  left: 19.5em;
   position: absolute;
-  top: 18em;
+  top: 17.5em;
   width: 15em;
   z-index: 1;
   
