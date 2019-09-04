@@ -8,19 +8,22 @@
   <link href="/styles/base.css" type="text/css" rel="stylesheet" />
   <link href="/styles/layout.css" type="text/css" rel="stylesheet" />
   <link href="/styles/nav.css" type="text/css" rel="stylesheet" />
+  <link href="styles/modules.css" type="text/css" rel="stylesheet" />
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <title>Document</title>
 </head>
 
-<%- include('../layout/header.ejs') %>
+<header><%- include('../layout/header.ejs') %></header>
+<div id="choose-game">
+  <form id="triva_link" class="form1" action="/triva" method="get">
+    <button>Trivia</button>
+  </form>
 
-<form id="triva_link" class="form1" action="/triva" method="get">
-  <button>Trivia</button>
-</form>
-
-<form id="triva_link" class="form1" action="/simon" method="get">
-  <button>Simon</button>
-</form>
+  <form id="triva_link" class="form1" action="/simon" method="get">
+    <button>Simon</button>
+  </form>
+</div>
+<script src="js/app.js"></script>
 
 </html>

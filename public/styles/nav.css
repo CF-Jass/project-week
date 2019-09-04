@@ -12,16 +12,16 @@ z-index: -1;
 }
 
 #sabers {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin-right: 50px;
+  display: flex; 
+   flex-direction: column;
+  /* justify-content: flex-end; */
+  margin-right: 120px;
  
 }
 
 #yoda, #vader, #obi {
   display: flex;
-  justify-content: flex-end
+  /* justify-content: flex-end */
 }
 
 .plasma {
@@ -51,11 +51,9 @@ z-index: -1;
 #vader {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: flex-start;
+  justify-content: flex-end;
   
 }
-
-
 
 #obi-plasma, #vader-plasma, #yoda-plasma {
   background: rgb(255, 255, 255);
@@ -64,13 +62,11 @@ z-index: -1;
 
 #link-box {
   display: flex;
-  justify-content: flex-end;
   margin-top: 25px;
  
 }
 
 #links{
-  
   width: 100%;
   padding: 15px;
   position: absolute;
@@ -82,7 +78,7 @@ z-index: -1;
 
 #links a {
   display: block;
-  margin-right: 50px;
+  margin-right: 25px;
   margin-top: 20px;
  text-decoration: none;
  font-family: 'Montserrat', sans-serif;
