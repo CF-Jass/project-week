@@ -18,27 +18,13 @@
 
   <title>Trivia</title>
 </head>
-<header><%- include('../layout/header.ejs') %></header>
+
 
 <body>
 
-  <h1>Index</h1>
+
   <%- include('../pages/timer.ejs') %>
 
-  <p id="demo"></p>
-  <br>
-  <br>
-  <h2>Number of questions left: <%= (21 - recentQuestion.length) %></h2>
-  <form action="/submit" method="POST">
-    <fieldset>
-      <legend><%= questionData %></legend>
-      <% if (dummyData.questionType === 'boolean') { %>
-      <%- include('../layout/questionBoolean') %>
-      <% } else { %>
-      <%- include('../layout/questionMultiple') %>
-      <% } %>
-    </fieldset>
-  </form>
 
   <h2 id="question-title">Number of questions left: <%= (21 - recentQuestion.length) %></h2>
   <div id="trivia-box">
