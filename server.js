@@ -50,7 +50,7 @@ app.get('*', (req, res) => { res.status(404).render('pages/error') });
 const dummyData = require('./data/dummyData.json');
 let recentQuestion = [];
 let numOfCorrectAnswers = 0;
-let username;
+
 
 //functions
 function home(req, res) {
@@ -75,10 +75,13 @@ function validateAnswer(req, res) {
 }
 
 function loadGamePage(req, res) {
-  if (!username) {
-    username = req.body.username;
-  }
-  res.render('./pages/gamepage', { username: req.query.username });
+  const query = req.body.username
+  // let username;
+  // if (!username) {
+  //   username = req.body.username;
+  // }
+  console.log(query)
+  // res.render('./pages/gamepage', { username: req.query.username });
 }
 
 function loadSimon(req, res) {
@@ -114,11 +117,10 @@ function loadGame(req, res) {
     client.query(sqlInsert, sqlArray);
     recentQuestion = [];
     numOfCorrectAnswers = 0;
-    username;
     res.redirect('/scores');
   } else {
     console.log(`Length is ${recentQuestion.length}, Our recent question array is ${recentQuestion}`)
-    console.log(`username is ${username}`)
+    // console.log(`username is ${username}`)
     let getRandomQuestion = getUniqueIndex();
     let singleQuestion = dummyData[getRandomQuestion];
     superagent
