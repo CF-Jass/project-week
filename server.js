@@ -116,10 +116,9 @@ function loadGame(req, res) {
     numOfCorrectAnswers = 0;
     res.redirect('/scores');
   } else {
+    console.log(`Length is ${recentQuestion.length}, Our recent question array is ${recentQuestion}`)
     let getRandomQuestion = getUniqueIndex();
     let singleQuestion = dummyData[getRandomQuestion];
-    // console.log(singleQuestion)
-    // console.log(singleQuestion)
     superagent
       .post('https://api.funtranslations.com/translate/yoda.json')
       .send({ text: singleQuestion.question })
