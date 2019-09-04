@@ -28,12 +28,15 @@ app.use(methodOverride((request, response) => {
 //routes
 app.get('/', home);
 app.get('/start', loadUsername);
-app.get('/save-username', loadGamePage)
+app.get('/gamepage', loadGamePage)
 app.get('/quiz', loadGame);
 app.post('/submit', validateAnswer);
 app.get('/scores', loadScores);
 app.get('/triva', loadGame);
 app.get('/simon', loadSimon);
+
+// Input {username: george, score: 5, game: 'trivia'}
+app.post('/addScore', addScore);
 
 
 app.get('*', (req, res) => { res.status(404).render('pages/error') });
@@ -63,13 +66,26 @@ function validateAnswer(req, res) {
 }
 
 function loadGamePage(req, res) {
-  res.render('./pages/gamepage')
+  res.render('./pages/gamepage', {username: req.query.username});
 }
 
 function loadSimon(req, res) {
   res.render('./pages/simon')
 }
 
+function addScore(req, res) {
+  //let sqlInsert = 'INSERT INTO highscores (username, date, score, game) VALUES ($1, $2, $3, $4);'
+  console.log("updateAndViewScores called: ", req.body);
+  let sqlInsert = 'INSERT INTO highscores (username, date, score) VALUES ($1, $2, $3);';
+  let sqlArray = [
+    req.body.username, 
+    new Date(Date.now()).toDateString(), 
+    req.body.score   //,
+    //req.body.game
+  ];
+  client.query(sqlInsert, sqlArray);
+  res.sendStatus(200);
+}
 
 
 let username;
