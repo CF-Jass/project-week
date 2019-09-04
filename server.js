@@ -114,6 +114,7 @@ function loadGame(req, res) {
     client.query(sqlInsert, sqlArray);
     recentQuestion = [];
     numOfCorrectAnswers = 0;
+    username;
     res.redirect('/scores');
   } else {
     console.log(`Length is ${recentQuestion.length}, Our recent question array is ${recentQuestion}`)
