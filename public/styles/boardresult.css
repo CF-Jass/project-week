@@ -1,0 +1,51 @@
+
+#bottomArea {
+  position: relative;
+}
+
+#conversation {
+  position: absolute;
+  width: 100%;
+}
+
+#yoda-side {
+  float: right;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  display: inline-block;
+  margin-top: 30em;
+}
+
+
+#yoda {
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+#yodaTextBubble {
+  background-image: url("../img/textBubbleRight.png");
+  background-size: 250px;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: -130px;
+  left: -80px;
+  transition: all 0.5s;
+  opacity: 0;
+  text-align: center;
+}
+
+.bubbleText {
+  display: table-cell;
+  text-align: center;
+  height: 180px;
+  vertical-align: middle;
+  width: 240px;
+  font-size: 14px;
+  padding: 20px;
+}
+
