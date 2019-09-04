@@ -1,18 +1,35 @@
 <%- include('../layout/head.ejs') %>
 <%- include('../layout/css.ejs') %>
-  <title>Document</title>
+<title>Document</title>
 </head>
+
 <body>
-    <%- include('../layout/header.ejs') %>
+  <%- include('../layout/header.ejs') %>
 
-
-  <h1>You've completed the quiz.</h1>
-  <br>
-  <% for (let i = 0; i < scores.length; i++) { %>
-  <li><%= scores[i].score %> / <%= scores[i].username %> / <%= scores[i].date %></li>
-  <% } %>
-  
-
+  <div id="score-box">
+    <div id="score-text">
+      <h1>You've completed the game!</h1>
+      <h2>High Scores</h2>
+    </div>
+    <br>
+    <div id="score-list">
+      <table id="score-table">
+        <tr>
+          <th>Name</th>
+          <th>Score</th>
+          <th>Date</th>
+        </tr>
+        <tr>
+          <% for (let i = 0; i < scores.length; i++) { %>
+          <td><%= scores[i].username %></td>
+          <td><%= scores[i].score %></td>
+          <td id="date-td"><%= scores[i].date %> </td>
+        </tr>
+        <% } %>
+      </table>
+    </div>
+  </div>
   <%- include('../layout/footer.ejs') %>
 </body>
+
 </html>

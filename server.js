@@ -35,6 +35,7 @@ app.post('/submit', validateAnswer);
 app.get('/scores', loadScores);
 app.get('/triva', loadGame);
 app.get('/simon', loadSimon);
+app.get('/aboutus', loadAboutUs);
 
 // Input {username: george, score: 5, game: 'trivia'}
 app.post('/addScore', addScore);
@@ -58,6 +59,10 @@ function loadUsername(req, res) {
   res.render('./pages/username');
 }
 
+function loadAboutUs(req, res) {
+  res.render('./pages/aboutus');
+}
+
 function validateAnswer(req, res) {
   let selectedAnswer = req.body.answer
   if (selectedAnswer === 'yes') {
@@ -70,7 +75,7 @@ function loadGamePage(req, res) {
   if (!username) {
     username = req.body.username;
   }
-  res.render('./pages/gamepage', {username: req.query.username});
+  res.render('./pages/gamepage', { username: req.query.username });
 }
 
 function loadSimon(req, res) {
@@ -82,8 +87,8 @@ function addScore(req, res) {
   console.log("updateAndViewScores called: ", req.body);
   let sqlInsert = 'INSERT INTO highscores (username, date, score) VALUES ($1, $2, $3);';
   let sqlArray = [
-    req.body.username, 
-    new Date(Date.now()).toDateString(), 
+    req.body.username,
+    new Date(Date.now()).toDateString(),
     req.body.score   //,
     //req.body.game
   ];
