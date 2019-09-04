@@ -1,22 +1,24 @@
 <%- include('../layout/head.ejs') %>
 <%- include('../layout/css.ejs') %>
-  <title>Document</title>
+<title>Document</title>
 </head>
+
 <body>
   <%- include('../layout/header.ejs') %>
 
 
   <div id="choose-game">
     <form id="triva_link" class="form1" action="/triva" method="get">
-      <button>Trivia</button>
+      <button class="button">Trivia</button>
     </form>
 
     <form id="triva_link" class="form1" action="/simon" method="get">
-      <button>Simon</button>
+      <button class="button">Simon</button>
     </form>
   </div>
 
-  
+
   <%- include('../layout/footer.ejs') %>
 </body>
+
 </html>

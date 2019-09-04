@@ -6,6 +6,7 @@
 .simon_container {
   position: relative;
   width: 55em;
+  text-align: center;
 }
 
 /* This is the middle that contains the start button, points, and title */
@@ -23,6 +24,7 @@
   top: 18em;
   width: 15em;
   z-index: 1;
+  
 }
 
 .simon_button {
