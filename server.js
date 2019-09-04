@@ -27,8 +27,9 @@ app.use(methodOverride((request, response) => {
 
 //routes
 app.get('/', home);
-app.get('/start', loadUsername);
+// app.get('/start', loadUsername);
 app.get('/gamepage', loadGamePage)
+app.post('/gamepage', loadGamePage)
 app.get('/quiz', loadGame);
 app.post('/submit', validateAnswer);
 app.get('/scores', loadScores);
@@ -45,6 +46,7 @@ app.get('*', (req, res) => { res.status(404).render('pages/error') });
 const dummyData = require('./data/dummyData.json');
 let recentQuestion = [];
 let numOfCorrectAnswers = 0;
+let username;
 
 //functions
 function home(req, res) {
@@ -54,7 +56,6 @@ function home(req, res) {
 
 function loadUsername(req, res) {
   res.render('./pages/username');
-  // console.log(req.body);
 }
 
 function validateAnswer(req, res) {
@@ -66,6 +67,9 @@ function validateAnswer(req, res) {
 }
 
 function loadGamePage(req, res) {
+  if (!username) {
+    username = req.body.username;
+  }
   res.render('./pages/gamepage', {username: req.query.username});
 }
 
@@ -87,8 +91,6 @@ function addScore(req, res) {
   res.sendStatus(200);
 }
 
-
-let username;
 function loadGame(req, res) {
   if (recentQuestion.length >= 20) {
     let sqlInsert = 'INSERT INTO highscores (username, date, score) VALUES ($1, $2, $3);'
@@ -98,11 +100,10 @@ function loadGame(req, res) {
     numOfCorrectAnswers = 0;
     res.redirect('/scores');
   } else {
-    if (!username) {
-      username = req.body.username;
-    }
     let getRandomQuestion = getUniqueIndex();
     let singleQuestion = dummyData[getRandomQuestion];
+    // console.log(singleQuestion)
+    // console.log(singleQuestion)
     superagent
       .post('https://api.funtranslations.com/translate/yoda.json')
       .send({ text: singleQuestion.question })

@@ -376,7 +376,7 @@
     "question" : "What movie's alien species makes an appearance in the movie The Phantom Menace?",
     "questionType" : "multiple",
     "difficulty" : "hard",
-    "anwers" : [
+    "answers" : [
       {"value" : "E.T.", "correct" : "yes"},
       {"value" : "Avatar", "correct" : "no"},
       {"value" : "Star Trek", "correct" : "no"},
@@ -388,7 +388,7 @@
     "question" : "What's the name of the planet that Rey was abandonned by her parents?",
     "questionType" : "multiple",
     "difficulty" : "easy",
-    "anwers" : [
+    "answers" : [
       {"value" : "Jakku", "correct" : "yes"},
       {"value" : "Tatooine", "correct" : "no"},
       {"value" : "Lah'mu", "correct" : "no"},
@@ -400,7 +400,7 @@
     "question" : "What is Kylo Ren's real name?",
     "questionType" : "multiple",
     "difficulty" : "easy",
-    "anwers" : [
+    "answers" : [
       {"value" : "Ben Solo", "correct" : "yes"},
       {"value" : "Beru Solo", "correct" : "no"},
       {"value" : "Nicholas Carignan", "correct" : "no"},
@@ -412,7 +412,7 @@
     "question" : "Which episode was not directed by George Lucas?",
     "questionType" : "multiple",
     "difficulty" : "medium",
-    "anwers" : [
+    "answers" : [
       {"value" : "Episode VI - Return of the Jedi", "correct" : "yes"},
       {"value" : "Episode IV - A New Hope", "correct" : "no"},
       {"value" : "Episode III - Revenge of the Sith", "correct" : "no"},
@@ -424,7 +424,7 @@
     "question" : "Which system was destroyed by the First Order?",
     "questionType" : "multiple",
     "difficulty" : "medium",
-    "anwers" : [
+    "answers" : [
       {"value" : "Hosnian", "correct" : "yes"},
       {"value" : "Neimoidia", "correct" : "no"},
       {"value" : "Jedha", "corret" : "no"},
