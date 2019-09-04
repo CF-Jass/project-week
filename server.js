@@ -117,6 +117,7 @@ function loadGame(req, res) {
     res.redirect('/scores');
   } else {
     console.log(`Length is ${recentQuestion.length}, Our recent question array is ${recentQuestion}`)
+    console.log(`username is ${username}`)
     let getRandomQuestion = getUniqueIndex();
     let singleQuestion = dummyData[getRandomQuestion];
     superagent
