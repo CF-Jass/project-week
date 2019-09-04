@@ -9,7 +9,7 @@
   <div id="score-box">
     <div id="score-text">
       <h1>You've completed the game!</h1>
-      <h2>High Scores</h2>
+      <h2 class="main-header" id="score-header">High Scores</h2>
     </div>
     <br>
     <div id="score-list">
@@ -22,7 +22,7 @@
         <tr>
           <% for (let i = 0; i < scores.length; i++) { %>
           <td><%= scores[i].username %></td>
-          <td><%= scores[i].score %></td>
+          <td id="score-td"><%= scores[i].score %></td>
           <td id="date-td"><%= scores[i].date %> </td>
         </tr>
         <% } %>

@@ -1,11 +1,10 @@
 <%- include('../layout/head.ejs') %>
 <%- include('../layout/css.ejs') %>
-<link href="styles/timer.css" type="text/css" rel="stylesheet" />
+<!-- <link href="styles/timer.css" type="text/css" rel="stylesheet" /> -->
 <title>Trivia</title>
 </head>
 
 <body>
-  <h1 class="main-header">Yoda's Trivia</h1>
   <h2 id="question-title">Number of questions left: <%= (21 - recentQuestion.length) %></h2>
   <div id="lightsaber-timer">
     <%- include('../layout/timer.ejs') %>
@@ -25,8 +24,8 @@
     </form>
   </div>
 
-  <img id="yoga-trivia-img" src="/img/yode_full_body.png" />
-  <h1 class="main-header">Yoda's Trivia</h1>
+  <img id="yoda-trivia-img" src="/img/yode_full_body.png" />
+  <h1 class="main-header" id="trivia-header">Yoda's Trivia</h1>
   <%- include('../layout/footer.ejs') %>
   <script src="js/timer.js"></script>
 </body>

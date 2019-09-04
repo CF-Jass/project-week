@@ -1,14 +1,29 @@
 <%- include('../layout/head.ejs') %>
 <%- include('../layout/css.ejs') %>
-  <title>404</title>
+<title>404</title>
 </head>
+
 <body>
-    <%- include('../layout/header.ejs') %>
+  <%- include('../layout/header.ejs') %>
 
 
-  <h1>This is not the page you are looking for....</h1>
+  <h1 class="main-header">This is not the page you are looking for....</h1>
+  <div id="luke-error-box">
+    <img id="luke-error" src="/img/luke_full_body.png">
+  </div>
+
+
+
+  <div id="yoda-error-box">
+    <img id="yoda-error" src="/img/yode_full_body.png">
+  </div>
+
+  <div id="leia-error-box">
+    <img id="leia-error" src="/img/leia_full_body.png">
+  </div>
 
 
   <%- include('../layout/footer.ejs') %>
 </body>
+
 </html>
