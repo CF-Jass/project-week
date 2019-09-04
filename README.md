@@ -2,6 +2,35 @@
 
 ## Creators: Susanna Lakey, Sarah Gilliam, Jon Veach, Adrian Huebner
 
+### What this project is
+* A place for Star Wars fans to congregate and play games with a Star Wars themes.
+* This app contains the following games:
+  * A trivia game with questions about Star Wars.  The game is timed and limited to a particular amount of questions.  All questions are filtered through the yoda speak API.
+  * A Simon Says game. 
+* When a user has completed a game they can share their score with friends and see a high score list.
+
+### Library, Frameworks, and Packages Used:
+* dotenv
+* ejs
+* express
+* postgres
+* sharer.js
+* superagent
+* Yoda translator API https://funtranslations.com/api/yoda
+
+### Instructions to Get Program Running On Your Own Computer:
+1. Clone the repository to your computer:
+2. Install all dependencies by using the command ```npm install``` in your terminal.
+3. Create your database and table with the steps in the schema.sql.
+4. Set your port in a .env file.
+5. Add your API key to the .env and set it equivalent to YODA_API.
+
+### API Endpoints:
+* Yoda translator API:
+  * The endpoint for connecting: https://api.funtranslations.com/translate/
+  * Example response:
+    * When the question "C-3P0 is fluent in how many languages?" is entered it returns "C-3P0 fluent, in many languages is?"
+
 ### Conflict Resolution Plan
 * Everyone stops coding as soon as there is a conflict
 * If voting becomes tied, everyone talks about why they like what they voted for and then come to a middle ground as a group
@@ -45,3 +74,4 @@ https://www.gamespot.com/gallery/the-25-toughest-star-wars-trivia-questions-in-a
 https://stackoverflow.com/questions/5915096/get-random-item-from-javascript-array
 https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 https://scotch.io/bar-talk/build-a-lightsaber-with-css-and-a-checkbox-solution-to-code-challenge-3
+https://cssbuttoncreator.com/
