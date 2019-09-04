@@ -35,6 +35,8 @@ app.post('/submit', validateAnswer);
 app.get('/scores', loadScores);
 app.get('/triva', loadGame);
 app.get('/simon', loadSimon);
+app.get('/board', loadBoard);
+app.get('/boardresult', loadBoardResult);
 
 // Input {username: george, score: 5, game: 'trivia'}
 app.post('/addScore', addScore);
@@ -75,6 +77,14 @@ function loadGamePage(req, res) {
 
 function loadSimon(req, res) {
   res.render('./pages/simon')
+}
+
+function loadBoard(req, res) {
+  res.render('./pages/board')
+}
+
+function loadBoardResult(req, res) {
+  res.render('./pages/boardresult')
 }
 
 function addScore(req, res) {
