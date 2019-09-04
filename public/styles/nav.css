@@ -13,15 +13,12 @@ z-index: -1;
 
 #sabers {
   display: flex; 
-   flex-direction: column;
-  /* justify-content: flex-end; */
+  flex-direction: column;
   margin-right: 120px;
- 
 }
 
 #yoda, #vader, #obi {
   display: flex;
-  /* justify-content: flex-end */
 }
 
 .plasma {
@@ -29,7 +26,6 @@ z-index: -1;
   background: green;
   height: 4px;
   width: 44px;
-  /* margin-left: 22px; */
   z-index: -1;
   margin-top: 15px;
   border-radius: 3px;

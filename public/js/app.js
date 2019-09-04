@@ -16,12 +16,4 @@ $(document).ready(function () {
     $('#vader-plasma').css({ 'background': 'rgb(255, 255, 255)', 'box-shadow': '0px 0px 12px 3px rgb(233, 235, 235)' })
     $('#yoda-plasma').css({ 'background': 'rgb(255, 255, 255)', 'box-shadow': '0px 0px 12px 3px rgb(233, 235, 235)' })
   })
-
-
 })
-
-
-
-// // transition: transform 0.8s;
-// // transform: translate(200px);
-// }

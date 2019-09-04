@@ -102,6 +102,8 @@ function loadGame(req, res) {
   } else {
     let getRandomQuestion = getUniqueIndex();
     let singleQuestion = dummyData[getRandomQuestion];
+    // console.log(singleQuestion)
+    // console.log(singleQuestion)
     superagent
       .post('https://api.funtranslations.com/translate/yoda.json')
       .send({ text: singleQuestion.question })
