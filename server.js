@@ -81,7 +81,9 @@ function loadGamePage(req, res) {
   //   username = req.body.username;
   // }
   console.log(query)
-  // res.render('./pages/gamepage', { username: req.query.username });
+  const newUser = new userData(query)
+  res.send(newUser)
+  res.render('./pages/gamepage'); //, { username: req.query.username }
 }
 
 function loadSimon(req, res) {
@@ -119,8 +121,10 @@ function loadGame(req, res) {
     numOfCorrectAnswers = 0;
     res.redirect('/scores');
   } else {
-    console.log(`Length is ${recentQuestion.length}, Our recent question array is ${recentQuestion}`)
+    // console.log(`Length is ${recentQuestion.length}, Our recent question array is ${recentQuestion}`)
     // console.log(`username is ${username}`)
+    // console.log()
+    console.log(newUser);
     let getRandomQuestion = getUniqueIndex();
     let singleQuestion = dummyData[getRandomQuestion];
     superagent
@@ -153,6 +157,11 @@ function getUniqueIndex() {
   }
   recentQuestion.push(randomIndex);
   return randomIndex;
+}
+
+function userData(username) {
+  this.username = username;
+  this.bananas = 'bananas';
 }
 
 
