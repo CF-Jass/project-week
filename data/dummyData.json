@@ -370,6 +370,90 @@
       {"value" : "Florrum", "correct" : "no"},
       {"value" : "Kamino", "correct" : "no"}
       ]
+  },
+  {
+    "id" : 32,
+    "question" : "What movie's alien species makes an appearance in the movie The Phantom Menace?",
+    "questionType" : "multiple",
+    "difficulty" : "hard",
+    "anwers" : [
+      {"value" : "E.T.", "correct" : "yes"},
+      {"value" : "Avatar", "correct" : "no"},
+      {"value" : "Star Trek", "correct" : "no"},
+      {"value" : "Mars Attacks!", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 33,
+    "question" : "What's the name of the planet that Rey was abandonned by her parents?",
+    "questionType" : "multiple",
+    "difficulty" : "easy",
+    "anwers" : [
+      {"value" : "Jakku", "correct" : "yes"},
+      {"value" : "Tatooine", "correct" : "no"},
+      {"value" : "Lah'mu", "correct" : "no"},
+      {"value" : "Mustafar", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 34,
+    "question" : "What is Kylo Ren's real name?",
+    "questionType" : "multiple",
+    "difficulty" : "easy",
+    "anwers" : [
+      {"value" : "Ben Solo", "correct" : "yes"},
+      {"value" : "Beru Solo", "correct" : "no"},
+      {"value" : "Nicholas Carignan", "correct" : "no"},
+      {"value" : "Ginger Carignan", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 35,
+    "question" : "Which episode was not directed by George Lucas?",
+    "questionType" : "multiple",
+    "difficulty" : "medium",
+    "anwers" : [
+      {"value" : "Episode VI - Return of the Jedi", "correct" : "yes"},
+      {"value" : "Episode IV - A New Hope", "correct" : "no"},
+      {"value" : "Episode III - Revenge of the Sith", "correct" : "no"},
+      {"value" : "Episode II - Attack of the Clones", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 36,
+    "question" : "Which system was destroyed by the First Order?",
+    "questionType" : "multiple",
+    "difficulty" : "medium",
+    "anwers" : [
+      {"value" : "Hosnian", "correct" : "yes"},
+      {"value" : "Neimoidia", "correct" : "no"},
+      {"value" : "Jedha", "corret" : "no"},
+      {"value" : "Malastare", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 37,
+    "question" : "Which Star Wars star was nominated for an Academy Award?",
+    "questionType" : "multiple",
+    "difficulty" : "medium",
+    "answers" : [
+      {"value" : "Alec Guinness", "correct" : "yes"},
+      {"value" : "Dan-Huy Le", "correct" : "no"},
+      {"value" : "Harrison Ford", "correct" : "no"},
+      {"value" : "John Ratzenberger", "correct" : "no"}
+    ]
+  },
+  {
+    "id" : 38,
+    "question" : "Who was Princess Leia's only hope?",
+    "questionType" : "multiple",
+    "difficulty" : "easy",
+    "answers" : [
+      {"value" : "Obi Wan Kenobi", "correct" : "yes"},
+      {"value" : "Lena Eivy", "correct" : "no"},
+      {"value" : "Yoda", "correct" : "no"},
+      {"value" : "Emporer Palpatine", "correct" : "no"}
+    ]
   }
 ]
 
