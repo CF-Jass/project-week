@@ -1,6 +1,36 @@
 
-function Timer(count_from, interval, on_zero) {
-  this.count_from = count_from;
+
+function checkStorage() {
+  let timeRemaining = 300000;
+  if (!localStorage.timer){
+    testTimer(timeRemaining)
+  } else {
+    let storedTime = localStorage.getItem('timer')
+    let parseTime = JSON.parse(storedTime)
+    testTimer(parseTime)
+  }
+}
+
+function testTimer(timeRemaining) {
+  let countDownDate = new Date(Date.now() + timeRemaining).getTime();
+  var x = setInterval(function() {
+    timeRemaining = timeRemaining - 1000;
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+    var timer = new Timer(300,(timeRemaining/1000), 1000, () => {
+      clearInterval(x);
+      window.location.pathname = '/scores';
+      localStorage.clear();
+    })
+    timer.resume();
+    localStorage.setItem("timer",timeRemaining);
+  }, 1000);
+}
+
+
+
+function Timer (start, count_from, interval, on_zero){
+  this.count_from = start;
   this.current = count_from;
   this.running = false;
   this.on_zero = on_zero;
@@ -34,6 +64,8 @@ Timer.prototype.resume = function () {
 }
 
 // Move these two lines to whichever page is using our timer
-var timer = new Timer(60, 1000, () => window.location.pathname = '/timer_zero');
-timer.resume();
+// var timer = new Timer(60, 1000, () => window.location.pathname = '/timer_zero');
+
+checkStorage()
+
 

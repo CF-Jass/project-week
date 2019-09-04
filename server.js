@@ -59,7 +59,7 @@ function validateAnswer(req, res) {
   if (selectedAnswer === 'yes') {
     numOfCorrectAnswers++;
   }
-  // res.redirect('/quiz');
+  res.redirect('/quiz');
 }
 
 function loadGamePage(req, res) {
@@ -69,6 +69,8 @@ function loadGamePage(req, res) {
 function loadSimon(req, res) {
   res.render('./pages/simon')
 }
+
+
 
 let username;
 function loadGame(req, res) {
