@@ -109,7 +109,8 @@ body {
   margin: 25px;
 }
 
-#simon-flex {
+
+/* #simon-flex {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -121,7 +122,7 @@ body {
   margin: auto;
   width: 60%;
   margin-top: 40px;
-}
+} */
 
 #score-td {
   text-align: center;

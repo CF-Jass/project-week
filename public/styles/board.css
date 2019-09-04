@@ -1,16 +1,20 @@
 
 .centerx{
+  margin: 0 auto;
   text-align: center;
+  margin-top: 10em;
+  width: 100%;
 }
 
 #four_in_a_row_container{
   display: inline-block;
+  margin-top: 1em;
 }
 
 #four_in_a_row_container .gridCell {
-  background-color:gray;
-  height: 10em;
-  width: 10em;
+  background-color:rgb(199, 199, 199);
+  height: 8em;
+  width: 8em;
   border-radius: 1.5em;
   transition: all, 0.2s;
 }
@@ -28,6 +32,11 @@
 #four_in_a_row_container .cellPlayer_1 {
   background-image: url('/img/vader.png');
   background-size: 100% 100%
+}
+
+#four_in_a_row_grid {
+  border-collapse: separate;
+  border-spacing: 0.5em;
 }
 
 #four_in_a_row_start {
@@ -50,4 +59,59 @@
 }
 #four_in_a_row_start:hover {
   background-color: #868686;
+}
+
+
+/* *********************DROP DOWN******************** */
+
+
+#leaderboard {
+  height: 300px;
+  width: 300px;
+  background-color: black;
+  background-image: url('../img/yode_full_body.png');
+  background-repeat: no-repeat;
+  background-size: 9em;
+  background-position-x: 1.1em;
+  background-position-y: 2em;
+  border: 2px solid white;
+  border-radius: 180px;
+  z-index: +1;
+  position: absolute;
+  top: -1000px;
+  transition: 2000ms;
+  display: block;
+}
+
+#leaderboardMessage {
+  text-align: center;
+  color: white;
+  font-family: monospace;
+  font-size: 18px;
+  margin-top: 100px;
+  margin-left: 100px;
+  display: inline-block;
+}
+
+
+#goToLeaderboard {
+  position: absolute;
+  display: inline-block;
+  color: white;
+  font-family: monospace;
+  font-size: 15px;
+  /* font-weight: bold; */
+  width: 125px;
+  background-color: rgb(175, 175, 175);
+  border-radius: 80px;
+  padding:5px;
+  margin: 0 auto;
+}
+
+#imageSlideInYoda {
+  height: 15em;
+  z-index: +1;
+  position: absolute;
+  top: -1000px;
+  transition: 2800ms;
 }

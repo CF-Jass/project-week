@@ -34,6 +34,10 @@ const lines = [
 let allCells = [];
 let currentPlayer = 0;
 let isGameRunning = false;
+let container = document.getElementById('four_in_a_row_container');
+let leaderboard = document.getElementById('leaderboard');
+let leaderboardMessage = document.getElementById('leaderboardMessage');
+let imageSlideInYoda = document.getElementById('imageSlideInYoda');
 
 function initBoard() {
   for (let r = 0; r < numRows; r++) {
@@ -153,7 +157,8 @@ function playCell(cellEl) {
     setTimeout(()=> {
       alert('Insert name of player ' + (currentPlayer + 1) + ' won');
     }, 200);
-  } else {
+  }
+  else {
     nextPlayer();
   }
 }
@@ -202,7 +207,10 @@ function playAITurn() {
   scoresForMoves.sort((a,b) => b.score - a.score);
   const bestMove = scoresForMoves[0];
   const bestCellToPlay = getCell(bestMove.row, bestMove.col);
-  playCell(bestCellToPlay);
+  setTimeout(()=> {
+    playCell(bestCellToPlay);
+  }, 700)
+  // playCell(bestCellToPlay);
 }
 
 function isAdjacentToOccupied(row, col) {
@@ -331,6 +339,13 @@ function getScoreForPlayerForCell(cellEl) {
   }
 
   return result_score;
+}
+
+function bringDownYodaWin(){
+  leaderboard.style.top = '95px';
+  leaderboardMessage.innerHTML = 'Win, you have.';
+  imageSlideInYoda.style.top = '295px';
+  container.style.opacity = '0.4'; // we want to make the wheel darker so the leaderboard drop down shows up better.
 }
 
 
