@@ -1,35 +1,36 @@
-
+let test;
 
 function checkStorage() {
   let timeRemaining = 300000;
-  if (!localStorage.timer){
+  if (!localStorage.timer) {
     testTimer(timeRemaining)
   } else {
     let storedTime = localStorage.getItem('timer')
     let parseTime = JSON.parse(storedTime)
+    test = parseTime;
     testTimer(parseTime)
   }
 }
 
 function testTimer(timeRemaining) {
   let countDownDate = new Date(Date.now() + timeRemaining).getTime();
-  var x = setInterval(function() {
+  var x = setInterval(function () {
     timeRemaining = timeRemaining - 1000;
     var now = new Date().getTime();
     var distance = countDownDate - now;
-    var timer = new Timer(300,(timeRemaining/1000), 1000, () => {
+    var timer = new Timer(300, (timeRemaining / 1000), 1000, () => {
       clearInterval(x);
       window.location.pathname = '/scores';
       localStorage.clear();
     })
     timer.resume();
-    localStorage.setItem("timer",timeRemaining);
+    localStorage.setItem("timer", timeRemaining);
   }, 1000);
 }
 
 
 
-function Timer (start, count_from, interval, on_zero){
+function Timer(start, count_from, interval, on_zero) {
   this.count_from = start;
   this.current = count_from;
   this.running = false;
@@ -44,7 +45,8 @@ function Timer (start, count_from, interval, on_zero){
     this.current--;
     let percentage = this.current / this.count_from;
     this.timer_element.width(this.outline_width * percentage);
-
+    console.log(`outline_width = ${this.outline_width} && percentage = ${percentage}`);
+    console.log(`this.current is ${this.current} && this.count_from is ${this.count_from}`)
     if (this.current < 0) {
       this.running = false;
       if (this.on_zero) {
@@ -66,6 +68,11 @@ Timer.prototype.resume = function () {
 // Move these two lines to whichever page is using our timer
 // var timer = new Timer(60, 1000, () => window.location.pathname = '/timer_zero');
 
-checkStorage()
 
+$(() => {
+  checkStorage()
+  $('head').append('<link href="styles/timer.css" type="text/css" rel="stylesheet" />')
+  let calculateBlade = (test / 1000) / 300
+  $('.timer_blade_actual').width(480 * calculateBlade);
+});
 
