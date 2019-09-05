@@ -28,30 +28,23 @@ app.use(methodOverride((request, response) => {
 //routes
 app.get('/', home);
 app.get('/gamepage', loadGamePage)
-app.get('/quiz', loadGame);
+app.get('/quiz', nextTriviaQuestion);
 app.post('/submit', validateAnswer);
 app.get('/scores', loadScores);
-app.get('/trivia', loadGame);
+app.get('/trivia', startNewTriviaGame);
 app.get('/simon', loadSimon);
 app.get('/board', loadBoard);
 app.get('/boardresult', loadBoardResult);
 app.get('/aboutus', loadAboutUs);
-
-
 // Input {username: george, score: 5, game: 'trivia'}
 app.post('/addScore', addScore);
-
-
 app.get('*', (req, res) => { res.status(404).render('pages/error') });
 
 //global vars
 const dummyData = require('./data/dummyData.json');
-let recentQuestion = [];
-let numOfCorrectAnswers = 0;
 
 //functions
 function home(req, res) {
-  recentQuestion = [];
   res.render('./pages/index');
 }
 
@@ -61,11 +54,16 @@ function loadAboutUs(req, res) {
 
 function validateAnswer(req, res) {
   const username = req.body.username;
+  let numOfCorrectAnswers = parseInt(req.body.numOfCorrectAnswers);
   let selectedAnswer = req.body.answer;
   if (selectedAnswer === 'yes') {
     numOfCorrectAnswers++;
   }
-  res.redirect('/quiz?username=' + username);
+
+  res.redirect('/quiz?username=' + username + 
+    '&recentQuestion=' + req.body.recentQuestion +
+    '&numOfCorrectAnswers=' + numOfCorrectAnswers
+  );
 }
 
 function loadGamePage(req, res) {
@@ -86,7 +84,6 @@ function loadBoardResult(req, res) {
 
 function addScore(req, res) {
   //let sqlInsert = 'INSERT INTO highscores (username, date, score, game) VALUES ($1, $2, $3, $4);'
-  console.log('updateAndViewScores called: ', req.body);
   let sqlInsert = 'INSERT INTO highscores (username, date, score) VALUES ($1, $2, $3);';
   let sqlArray = [
     req.body.username,
@@ -98,16 +95,27 @@ function addScore(req, res) {
   res.sendStatus(200);
 }
 
-function loadGame(req, res) {
+function startNewTriviaGame(req, res) {
+  nextTriviaQuestion(req, res);
+}
+
+function nextTriviaQuestion(req, res) {
+  // If it's the first time we're asking for a question, init the question array
+  const recentQuestion = req.query.recentQuestion
+    ? JSON.parse(req.query.recentQuestion)
+    : [];
+  // If it's the first time we're asking for a question, there are no correct answers
+  const numOfCorrectAnswers = !isNaN(req.query.numOfCorrectAnswers)
+    ? parseInt(req.query.numOfCorrectAnswers)
+    : 0;
+
   if (recentQuestion.length >= 20) {
     let sqlInsert = 'INSERT INTO highscores (username, date, score) VALUES ($1, $2, $3);'
     let sqlArray = [req.query.username, new Date(Date.now()).toDateString(), numOfCorrectAnswers]
     client.query(sqlInsert, sqlArray);
-    recentQuestion = [];
-    numOfCorrectAnswers = 0;
     res.redirect('/scores');
   } else {
-    let getRandomQuestion = getUniqueIndex();
+    let getRandomQuestion = getUniqueIndex(recentQuestion);
     let singleQuestion = dummyData[getRandomQuestion];
     // console.log(singleQuestion)
     // console.log(singleQuestion)
@@ -120,7 +128,8 @@ function loadGame(req, res) {
         { 
           questionData: responseFromSuper.body.contents.translated,
           dummyData: singleQuestion,
-          recentQuestion: recentQuestion
+          recentQuestion: recentQuestion,
+          numOfCorrectAnswers: numOfCorrectAnswers
         }));
   }
 }
@@ -136,7 +145,7 @@ function getRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
-function getUniqueIndex() {
+function getUniqueIndex(recentQuestion) {
   let randomIndex = getRandomNumber(0, dummyData.length - 1);
   while (recentQuestion.includes(randomIndex)) {
     randomIndex = getRandomNumber(0, dummyData.length);
