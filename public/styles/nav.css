@@ -15,6 +15,7 @@ z-index: -1;
   display: flex; 
   flex-direction: column;
   margin-right: 120px;
+  
 }
 
 #yoda, #vader, #obi {
@@ -67,9 +68,9 @@ z-index: -1;
   padding: 15px;
   position: absolute;
   z-index: 1;
-  background: rgb(104, 104, 104);
-  width: 200px;
- 
+  background: rgba(59, 57, 57, 0.982);
+  width: 400px;
+  font-size: 50px;
 }
 
 #links a {
@@ -79,7 +80,7 @@ z-index: -1;
  text-decoration: none;
  font-family: 'Montserrat', sans-serif;
  color: white;  
-
+line-height: 1.6em;
 
 }
 

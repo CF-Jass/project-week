@@ -1,818 +1,1602 @@
 [
   {
-    "id" : 1,
-    "question" : "What's the name of Han Solo's ship?",
-    "questionType" : "multiple",
-    "difficulty" : "easy",
-    "answers" : [
-      {"value" : "Millennium Falcon", "correct" : "yes"},
-      {"value" : "Red Rising", "correct" : "no"},
-      {"value" : "Blue Moon", "correct" : "no"},
-      {"value" : "New Aged Falcon", "correct" : "no"}
-      ]
-  },
-  {
-    "id" : 2,
-    "question" : "Which young Jedi Knight becomes Darth Vader in Star Wars?",
-    "questionType" : "multiple",
-    "difficulty" : "easy",
-    "answers" : [
-      {"value" : "Luke Skywalker", "correct" : "yes"},
-      {"value" : "Boba Fett", "correct" : "no"},
-      {"value" : "Darth Vader", "correct" : "no"},
-      {"value" : "Peter Carmichael", "correct" : "no"}
-      ]
-  },
-  {
-    "id" : 3,
-    "question" : "Which Star Wars movie was filmed entirely in the studio",
-    "questionType" : "multiple",
-    "difficulty" : "medium",
-    "answers" : [
-      {"value" : "Revenge of the Sith", "correct" : "yes"},
-      {"value" : "Return of the Jedi", "correct" : "no"},
-      {"value" : "Star Wars", "correct" : "no"},
-      {"value" : "Attack of the Clones", "correct" : "no"}
-      ]
-  },
-  {
-    "id" : 4,
-    "question" : "Which of the three main heroes (Luke, Leia, and Han Solo) in the first Star Wars trilogy refused to sign a three picture deal?",
-    "questionType" : "multiple",
-    "difficulty" : "medium",
-    "answers" : [
-      {"value" : "Harrison Ford", "correct" : "yes"},
-      {"value" : "Mark Hamill", "correct" : "no"},
-      {"value" : "Carrie Fisher", "correct" : "no"},
-      {"value" : "They all signed", "correct" : "no"}
-      ]
-  },
-  {
-    "id" : 5,
-    "question" : "What color is Mace Windu's lightsaber?",
-    "questionType" : "multiple",
-    "difficulty" : "easy",
-    "answers" : [
-      {"value" : "Purple", "correct" : "yes"},
-      {"value" : "Black", "correct" : "no"},
-      {"value" : "Blue", "correct" : "no"},
-      {"value" : "Green", "correct" : "no"}
-      ]
-  },
-  {
-    "id" : 6,
-    "question" : "The Star Wars Holiday Special marked the first appearance of which Star Wars character?",
-    "questionType" : "multiple",
-    "difficulty" : "medium",
-    "answers" : [
-      {"value" : "Boba Fett", "correct" : "yes"},
-      {"value" : "Jabba the Hutt", "correct" : "no"},
-      {"value" : "Jar Jar Binks", "correct" : "no"},
-      {"value" : "Lando Carlrissian", "correct" : "no"}
-      ]
-  },
-  {
-    "id" : 7,
-    "question" : "What actor pulled out of Episode III: Revenge of the Sith when he discovered that non-union actors were being used in the film?",
-    "questionType" : "multiple",
-    "difficulty" : "medium",
-    "answers" : [
-      {"value" : "Gary Oldman", "correct" : "yes"},
-      {"value" : "George Clooney", "correct" : "no"},
-      {"value" : "Gary Coleman", "correct" : "no"},
-      {"value" : "Mel Gibson", "correct" : "no"}
-      ]
-  },
-  {
-    "id" : 8,
-    "question" : "Who is the only non Jedi in the original Star Wars trilogy to use a lightsaber?",
-    "questionType" : "multiple",
-    "difficulty" : "easy",
-    "answers" : [
-      {"value" : "Han Solo", "correct" : "yes"},
-      {"value" : "Princess Leia", "correct" : "no"},
-      {"value" : "Chewbacca", "correct" : "no"},
-      {"value" : "R2-D2", "correct" : "no"}
-      ]
-  },
-  {
-    "id" : 9,
-    "question" : "In Episode VI: Return of the Jedi, the growls and sounds of the Rancor in Jabba's Palace were actually made by what animal?",
-    "questionType" : "multiple",
-    "difficulty" : "medium",
-    "answers" : [
-      {"value" : "Dachsund", "correct" : "yes"},
-      {"value" : "Wolverine", "correct" : "no"},
-      {"value" : "Pigeon", "correct" : "no"},
-      {"value" : "Panther", "correct" : "no"}
-      ]
-  },
-  {
-    "id" : 10,
-    "question" : "Who served as Jabba the Hutt's chief of staff?",
-    "questionType" : "multiple",
-    "difficulty" : "easy",
-    "answers" : [
-      {"value" : "Bib Fortuna", "correct" : "yes"},
-      {"value" : "Nute Gunray", "correct" : "no"},
-      {"value" : "Maz Kanata", "correct" : "no"},
-      {"value" : "Sarlacc", "correct" : "no"}
-      ]
-  },
-  {
-    "id" : 11,
-    "question" : "What odds does C-3P0 give Han for successfully navigating the asteroid field?",
-    "questionType" : "multiple",
-    "difficulty": "medium",
-    "answers" : [
-      {"value" : "3,720 to 1", "correct" : "yes"},
-      {"value" : "316,000 to 1", "correct" : "no"},
-      {"value" : "3,056,0000 to 1", "correct" : "no"},
-      {"value" : "45,000 to 1", "correct" : "no"}
-      ]
-  },
-  {
-    "id" : 12,
-    "question" : "What were Luke's aunt and uncle's job on Tatooine?",
-    "questionType" : "multiple",
+    "id": 1,
+    "question": "What's the name of Han Solo's ship?",
+    "questionType": "multiple",
     "difficulty": "easy",
-    "answers" : [
-      {"value" : "Moisture farmers", "correct" : "yes"},
-      {"value" : "Scavengers", "correct" : "no"},
-      {"value" : "Merchants", "correct" : "no"},
-      {"value" : "Droid Refurbishment", "correct" : "no"}
-      ]
+    "answers": [
+      {
+        "value": "Millennium Falcon",
+        "correct": "yes"
+      },
+      {
+        "value": "Red Rising",
+        "correct": "no"
+      },
+      {
+        "value": "Blue Moon",
+        "correct": "no"
+      },
+      {
+        "value": "New Aged Falcon",
+        "correct": "no"
+      }
+    ]
   },
   {
-    "id" : 13,
-    "question" : "In how many languages is C-3P0 fluent?",
-    "questionType" : "multiple",
-    "difficulty": "medium",
-    "answers" : [
-      {"value" : "More than 6 million", "correct" : "yes"},
-      {"value" : "More than 6,000", "correct" : "no"},
-      {"value" : "More than 60,000", "correct" : "no"},
-      {"value" : "More than 600,000", "correct" : "no"}
-      ]
-  },
-  {
-    "id" : 14,
-    "question" : "What is the Wookiee's home world?",
-    "questionType" : "multiple",
-    "difficulty": "medium",
-    "answers" : [
-      {"value" : "Kashyyyk", "correct" : "yes"},
-      {"value" : "Ikkrukk", "correct" : "no"},
-      {"value" : "Kril'Dor", "correct" : "no"},
-      {"value" : "Najra-Va", "correct" : "no"}
-      ]
-  },
-  {
-    "id" : 15,
-    "question" : "Which species stole the plans to the Death Star?",
-    "questionType" : "multiple",
-    "difficulty": "medium",
-    "answers" : [
-      {"value" : "Bothans", "correct" : "yes"},
-      {"value" : "Chiss", "correct" : "no"},
-      {"value" : "Ewoks", "correct" : "no"},
-      {"value" : "Mon Calamari", "correct" : "no"}
-      ]
-  },
-  {
-    "id" : 16,
-    "question" : "What is the name of Boba Fett's ship?",
-    "questionType" : "multiple",
-    "difficulty": "medium",
-    "answers" : [
-      {"value" : "Slave 1", "correct" : "yes"},
-      {"value" : "Ghost", "correct" : "no"},
-      {"value" : "Outrider", "correct" : "no"},
-      {"value" : "Ebon Hawk", "correct" : "no"}
-      ]
-  },
-  {
-    "id" : 17,
-    "question" : "What is the first Star Wars film in which Yoda is completely computer-generated?",
-    "questionType" : "multiple",
+    "id": 2,
+    "question": "Which young Jedi Knight becomes Darth Vader in Star Wars?",
+    "questionType": "multiple",
     "difficulty": "easy",
-    "answers" : [
-      {"value" : "Attack of the Clones", "correct" : "yes"},
-      {"value" : "Empire Strikes Back", "correct" : "no"},
-      {"value" : "Phantom Menice", "correct" : "no"},
-      {"value" : "Revenge of the Sith", "correct" : "no"}
-      ]
+    "answers": [
+      {
+        "value": "Anakin Skywalker",
+        "correct": "yes"
+      },
+      {
+        "value": "Boba Fett",
+        "correct": "no"
+      },
+      {
+        "value": "Darth Vader",
+        "correct": "no"
+      },
+      {
+        "value": "Peter Carmichael",
+        "correct": "no"
+      }
+    ]
   },
   {
-    "id" : 18,
-    "question" : "Which bounty hunter in The Empire Strikes Back is wearing an old costume from a Doctor Who episode?",
-    "questionType" : "multiple",
+    "id": 3,
+    "question": "Which Star Wars movie was filmed entirely in the studio?",
+    "questionType": "multiple",
+    "difficulty": "medium",
+    "answers": [
+      {
+        "value": "Revenge of the Sith",
+        "correct": "yes"
+      },
+      {
+        "value": "Return of the Jedi",
+        "correct": "no"
+      },
+      {
+        "value": "Star Wars",
+        "correct": "no"
+      },
+      {
+        "value": "Attack of the Clones",
+        "correct": "no"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "Which of the three main heroes (Luke, Leia, and Han Solo) in the first Star Wars trilogy refused to sign a three picture deal?",
+    "questionType": "multiple",
+    "difficulty": "medium",
+    "answers": [
+      {
+        "value": "Harrison Ford",
+        "correct": "yes"
+      },
+      {
+        "value": "Mark Hamill",
+        "correct": "no"
+      },
+      {
+        "value": "Carrie Fisher",
+        "correct": "no"
+      },
+      {
+        "value": "They all signed",
+        "correct": "no"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "What color is Mace Windu's lightsaber?",
+    "questionType": "multiple",
+    "difficulty": "easy",
+    "answers": [
+      {
+        "value": "Purple",
+        "correct": "yes"
+      },
+      {
+        "value": "Black",
+        "correct": "no"
+      },
+      {
+        "value": "Blue",
+        "correct": "no"
+      },
+      {
+        "value": "Green",
+        "correct": "no"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "The Star Wars Holiday Special marked the first appearance of which Star Wars character?",
+    "questionType": "multiple",
+    "difficulty": "medium",
+    "answers": [
+      {
+        "value": "Boba Fett",
+        "correct": "yes"
+      },
+      {
+        "value": "Jabba the Hutt",
+        "correct": "no"
+      },
+      {
+        "value": "Jar Jar Binks",
+        "correct": "no"
+      },
+      {
+        "value": "Lando Carlrissian",
+        "correct": "no"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "What actor pulled out of Episode III: Revenge of the Sith when he discovered that non-union actors were being used in the film?",
+    "questionType": "multiple",
+    "difficulty": "medium",
+    "answers": [
+      {
+        "value": "Gary Oldman",
+        "correct": "yes"
+      },
+      {
+        "value": "George Clooney",
+        "correct": "no"
+      },
+      {
+        "value": "Gary Coleman",
+        "correct": "no"
+      },
+      {
+        "value": "Mel Gibson",
+        "correct": "no"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "Who is the only non Jedi in the original Star Wars trilogy to use a lightsaber?",
+    "questionType": "multiple",
+    "difficulty": "easy",
+    "answers": [
+      {
+        "value": "Han Solo",
+        "correct": "yes"
+      },
+      {
+        "value": "Princess Leia",
+        "correct": "no"
+      },
+      {
+        "value": "Chewbacca",
+        "correct": "no"
+      },
+      {
+        "value": "R2-D2",
+        "correct": "no"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "In Episode VI: Return of the Jedi, the growls and sounds of the Rancor in Jabba's Palace were actually made by what animal?",
+    "questionType": "multiple",
+    "difficulty": "medium",
+    "answers": [
+      {
+        "value": "Dachsund",
+        "correct": "yes"
+      },
+      {
+        "value": "Wolverine",
+        "correct": "no"
+      },
+      {
+        "value": "Pigeon",
+        "correct": "no"
+      },
+      {
+        "value": "Panther",
+        "correct": "no"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "Who served as Jabba the Hutt's chief of staff?",
+    "questionType": "multiple",
+    "difficulty": "easy",
+    "answers": [
+      {
+        "value": "Bib Fortuna",
+        "correct": "yes"
+      },
+      {
+        "value": "Nute Gunray",
+        "correct": "no"
+      },
+      {
+        "value": "Maz Kanata",
+        "correct": "no"
+      },
+      {
+        "value": "Sarlacc",
+        "correct": "no"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "question": "What odds does C-3P0 give Han for successfully navigating the asteroid field?",
+    "questionType": "multiple",
+    "difficulty": "medium",
+    "answers": [
+      {
+        "value": "3,720 to 1",
+        "correct": "yes"
+      },
+      {
+        "value": "316,000 to 1",
+        "correct": "no"
+      },
+      {
+        "value": "3,056,0000 to 1",
+        "correct": "no"
+      },
+      {
+        "value": "45,000 to 1",
+        "correct": "no"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "question": "What were Luke's aunt and uncle's job on Tatooine?",
+    "questionType": "multiple",
+    "difficulty": "easy",
+    "answers": [
+      {
+        "value": "Moisture farmers",
+        "correct": "yes"
+      },
+      {
+        "value": "Scavengers",
+        "correct": "no"
+      },
+      {
+        "value": "Merchants",
+        "correct": "no"
+      },
+      {
+        "value": "Droid Refurbishment",
+        "correct": "no"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "question": "In how many languages is C-3P0 fluent?",
+    "questionType": "multiple",
+    "difficulty": "medium",
+    "answers": [
+      {
+        "value": "More than 6 million",
+        "correct": "yes"
+      },
+      {
+        "value": "More than 6,000",
+        "correct": "no"
+      },
+      {
+        "value": "More than 60,000",
+        "correct": "no"
+      },
+      {
+        "value": "More than 600,000",
+        "correct": "no"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "question": "What is the Wookiee's home world?",
+    "questionType": "multiple",
+    "difficulty": "medium",
+    "answers": [
+      {
+        "value": "Kashyyyk",
+        "correct": "yes"
+      },
+      {
+        "value": "Ikkrukk",
+        "correct": "no"
+      },
+      {
+        "value": "Kril'Dor",
+        "correct": "no"
+      },
+      {
+        "value": "Najra-Va",
+        "correct": "no"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "question": "Which species stole the plans to the Death Star?",
+    "questionType": "multiple",
+    "difficulty": "medium",
+    "answers": [
+      {
+        "value": "Bothans",
+        "correct": "yes"
+      },
+      {
+        "value": "Chiss",
+        "correct": "no"
+      },
+      {
+        "value": "Ewoks",
+        "correct": "no"
+      },
+      {
+        "value": "Mon Calamari",
+        "correct": "no"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "question": "What is the name of Boba Fett's ship?",
+    "questionType": "multiple",
+    "difficulty": "medium",
+    "answers": [
+      {
+        "value": "Slave 1",
+        "correct": "yes"
+      },
+      {
+        "value": "Ghost",
+        "correct": "no"
+      },
+      {
+        "value": "Outrider",
+        "correct": "no"
+      },
+      {
+        "value": "Ebon Hawk",
+        "correct": "no"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "question": "What is the first Star Wars film in which Yoda is completely computer-generated?",
+    "questionType": "multiple",
+    "difficulty": "easy",
+    "answers": [
+      {
+        "value": "Attack of the Clones",
+        "correct": "yes"
+      },
+      {
+        "value": "Empire Strikes Back",
+        "correct": "no"
+      },
+      {
+        "value": "Phantom Menice",
+        "correct": "no"
+      },
+      {
+        "value": "Revenge of the Sith",
+        "correct": "no"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "question": "Which bounty hunter in The Empire Strikes Back is wearing an old costume from a Doctor Who episode?",
+    "questionType": "multiple",
     "difficulty": "difficult",
-    "answers" : [
-      {"value" : "Bossk", "correct" : "yes"},
-      {"value" : "Boba Fett", "correct" : "no"},
-      {"value" : "IG-88", "correct" : "no"},
-      {"value" : "Dengar", "correct" : "no"}
-      ]
+    "answers": [
+      {
+        "value": "Bossk",
+        "correct": "yes"
+      },
+      {
+        "value": "Boba Fett",
+        "correct": "no"
+      },
+      {
+        "value": "IG-88",
+        "correct": "no"
+      },
+      {
+        "value": "Dengar",
+        "correct": "no"
+      }
+    ]
   },
   {
-    "id" : 19,
-    "question" : "The animators who brought the AT-AT Imperial Walkers to life in Episode V: The Empire Strikes Back based their movements on what kind of animal?",
-    "questionType" : "multiple",
+    "id": 19,
+    "question": "The animators who brought the AT-AT Imperial Walkers to life in Episode V: The Empire Strikes Back based their movements on what kind of animal?",
+    "questionType": "multiple",
     "difficulty": "easy",
-    "answers" : [
-      {"value" : "Elephant", "correct" : "yes"},
-      {"value" : "Giraffe", "correct" : "no"},
-      {"value" : "Stork", "correct" : "no"},
-      {"value" : "Camel", "correct" : "no"}
-      ]
+    "answers": [
+      {
+        "value": "Elephant",
+        "correct": "yes"
+      },
+      {
+        "value": "Giraffe",
+        "correct": "no"
+      },
+      {
+        "value": "Stork",
+        "correct": "no"
+      },
+      {
+        "value": "Camel",
+        "correct": "no"
+      }
+    ]
   },
   {
-    "id" : 20,
-    "question" : "Of whom did Jabba the Hutt say: 'This bounty hunter is my kind of scum ... fearless and inventive'?",
-    "questionType" : "multiple",
+    "id": 20,
+    "question": "Of whom did Jabba the Hutt say: 'This bounty hunter is my kind of scum ... fearless and inventive'?",
+    "questionType": "multiple",
     "difficulty": "medium",
-    "answers" : [
-      {"value" : "Princess Leia", "correct" : "yes"},
-      {"value" : "Boba Fett", "correct" : "no"},
-      {"value" : "Hans Solo", "correct" : "no"},
-      {"value" : "Asajj Ventress", "correct" : "no"}
-      ]
+    "answers": [
+      {
+        "value": "Princess Leia",
+        "correct": "yes"
+      },
+      {
+        "value": "Boba Fett",
+        "correct": "no"
+      },
+      {
+        "value": "Hans Solo",
+        "correct": "no"
+      },
+      {
+        "value": "Asajj Ventress",
+        "correct": "no"
+      }
+    ]
   },
   {
-    "id" : 21,
-    "question" : "What is the name of Boba Fett's ship?",
-    "questionType" : "multiple",
+    "id": 21,
+    "question": "What is the name of Boba Fett's ship?",
+    "questionType": "multiple",
     "difficulty": "easy",
-    "answers" : [
-      {"value" : "Slave 1", "correct" : "yes"},
-      {"value" : "Tantive 4", "correct" : "no"},
-      {"value" : "Ebon Hawk", "correct" : "no"},
-      {"value" : "Ravager", "correct" : "no"}
-      ]
+    "answers": [
+      {
+        "value": "Slave 1",
+        "correct": "yes"
+      },
+      {
+        "value": "Tantive 4",
+        "correct": "no"
+      },
+      {
+        "value": "Ebon Hawk",
+        "correct": "no"
+      },
+      {
+        "value": "Ravager",
+        "correct": "no"
+      }
+    ]
   },
   {
-    "id" : 22,
-    "question" : "What is the Wookie's home world?",
-    "questionType" : "multiple",
+    "id": 22,
+    "question": "What is the Wookie's home world?",
+    "questionType": "multiple",
     "difficulty": "easy",
-    "answers" : [
-      {"value" : "Kashyyyk", "correct" : "yes"},
-      {"value" : "Ikkrukk", "correct" : "no"},
-      {"value" : "Kril'Dor", "correct" : "no"},
-      {"value" : "Najra-Va", "correct" : "no"}
-      ]
+    "answers": [
+      {
+        "value": "Kashyyyk",
+        "correct": "yes"
+      },
+      {
+        "value": "Ikkrukk",
+        "correct": "no"
+      },
+      {
+        "value": "Kril'Dor",
+        "correct": "no"
+      },
+      {
+        "value": "Najra-Va",
+        "correct": "no"
+      }
+    ]
   },
   {
-    "id" : 23,
-    "question" : "Which character said: 'Why, you slimy, double-crossing, no-good swindler'?",
-    "questionType" : "multiple",
+    "id": 23,
+    "question": "Which character said: 'Why, you slimy, double-crossing, no-good swindler'?",
+    "questionType": "multiple",
     "difficulty": "medium",
-    "answers" : [
-      {"value" : "Lando Calrissian", "correct" : "yes"},
-      {"value" : "Luke Skywalker", "correct" : "no"},
-      {"value" : "Hans Solo", "correct" : "no"},
-      {"value" : "Leia Organa", "correct" : "no"}
-      ]
+    "answers": [
+      {
+        "value": "Lando Calrissian",
+        "correct": "yes"
+      },
+      {
+        "value": "Luke Skywalker",
+        "correct": "no"
+      },
+      {
+        "value": "Hans Solo",
+        "correct": "no"
+      },
+      {
+        "value": "Leia Organa",
+        "correct": "no"
+      }
+    ]
   },
   {
-    "id" : 24,
-    "question" : "What is Count Dooku's Sith name?",
-    "questionType" : "multiple",
+    "id": 24,
+    "question": "What is Count Dooku's Sith name?",
+    "questionType": "multiple",
     "difficulty": "medium",
-    "answers" : [
-      {"value" : "Darth Tyranus", "correct" : "yes"},
-      {"value" : "Darth Maul", "correct" : "no"},
-      {"value" : "Darth Sidious", "correct" : "no"},
-      {"value" : "Darth Nihilus", "correct" : "no"}
-      ]
+    "answers": [
+      {
+        "value": "Darth Tyranus",
+        "correct": "yes"
+      },
+      {
+        "value": "Darth Maul",
+        "correct": "no"
+      },
+      {
+        "value": "Darth Sidious",
+        "correct": "no"
+      },
+      {
+        "value": "Darth Nihilus",
+        "correct": "no"
+      }
+    ]
   },
   {
-    "id" : 25,
-    "question" : "Who plays Chewbacca in the original Star Wars trilogy?",
-    "questionType" : "multiple",
+    "id": 25,
+    "question": "Who plays Chewbacca in the original Star Wars trilogy?",
+    "questionType": "multiple",
     "difficulty": "medium",
-    "answers" : [
-      {"value" : "Peter Mayhew", "correct" : "yes"},
-      {"value" : "Kenny Baker", "correct" : "no"},
-      {"value" : "Anthony Daniels", "correct" : "no"},
-      {"value" : "David Prowse", "correct" : "no"}
-      ]
+    "answers": [
+      {
+        "value": "Peter Mayhew",
+        "correct": "yes"
+      },
+      {
+        "value": "Kenny Baker",
+        "correct": "no"
+      },
+      {
+        "value": "Anthony Daniels",
+        "correct": "no"
+      },
+      {
+        "value": "David Prowse",
+        "correct": "no"
+      }
+    ]
   },
   {
-    "id" : 26,
-    "question" : "Which Golden Girl played the role of Ackmena, the nightshift bartender in the Star Wars Holiday Special?",
-    "questionType" : "multiple",
+    "id": 26,
+    "question": "Which Golden Girl played the role of Ackmena, the nightshift bartender in the Star Wars Holiday Special?",
+    "questionType": "multiple",
     "difficulty": "medium",
-    "answers" : [
-      {"value" : "Bea Arthur", "correct" : "yes"},
-      {"value" : "Betty White", "correct" : "no"},
-      {"value" : "Rue McClanahan", "correct" : "no"},
-      {"value" : "Estella Getty", "correct" : "no"}
-      ]
+    "answers": [
+      {
+        "value": "Bea Arthur",
+        "correct": "yes"
+      },
+      {
+        "value": "Betty White",
+        "correct": "no"
+      },
+      {
+        "value": "Rue McClanahan",
+        "correct": "no"
+      },
+      {
+        "value": "Estella Getty",
+        "correct": "no"
+      }
+    ]
   },
   {
-    "id" : 27,
-    "question" : "Who did Obi-Wan Kenobi defeat in the Battle of Naboo?",
-    "questionType" : "multiple",
+    "id": 27,
+    "question": "Who did Obi-Wan Kenobi defeat in the Battle of Naboo?",
+    "questionType": "multiple",
     "difficulty": "medium",
-    "answers" : [
-      {"value" : "Darth Maul", "correct" : "yes"},
-      {"value" : "Darth Tyranus", "correct" : "no"},
-      {"value" : "Darth Sidious", "correct" : "no"},
-      {"value" : "Darth Malak", "correct" : "no"}
-      ]
+    "answers": [
+      {
+        "value": "Darth Maul",
+        "correct": "yes"
+      },
+      {
+        "value": "Darth Tyranus",
+        "correct": "no"
+      },
+      {
+        "value": "Darth Sidious",
+        "correct": "no"
+      },
+      {
+        "value": "Darth Malak",
+        "correct": "no"
+      }
+    ]
   },
   {
-    "id" : 28,
-    "question" : "Which species stole the plans to the Death Star?",
-    "questionType" : "multiple",
+    "id": 28,
+    "question": "Which species stole the plans to the Death Star?",
+    "questionType": "multiple",
     "difficulty": "easy",
-    "answers" : [
-      {"value" : "Bothans", "correct" : "yes"},
-      {"value" : "Mynocks", "correct" : "no"},
-      {"value" : "Selonians", "correct" : "no"},
-      {"value" : "Khommites", "correct" : "no"}
-      ]
+    "answers": [
+      {
+        "value": "Bothans",
+        "correct": "yes"
+      },
+      {
+        "value": "Mynocks",
+        "correct": "no"
+      },
+      {
+        "value": "Selonians",
+        "correct": "no"
+      },
+      {
+        "value": "Khommites",
+        "correct": "no"
+      }
+    ]
   },
   {
-    "id" : 29,
-    "question" : "What Wookie Jedi Master was renowned for his ability to sense the future?",
-    "questionType" : "multiple",
+    "id": 29,
+    "question": "What Wookie Jedi Master was renowned for his ability to sense the future?",
+    "questionType": "multiple",
     "difficulty": "easy",
-    "answers" : [
-      {"value" : "Tyvokka", "correct" : "yes"},
-      {"value" : "Krrsantan", "correct" : "no"},
-      {"value" : "Hanharr", "correct" : "no"},
-      {"value" : "Gungi", "correct" : "no"}
-      ]
+    "answers": [
+      {
+        "value": "Tyvokka",
+        "correct": "yes"
+      },
+      {
+        "value": "Krrsantan",
+        "correct": "no"
+      },
+      {
+        "value": "Hanharr",
+        "correct": "no"
+      },
+      {
+        "value": "Gungi",
+        "correct": "no"
+      }
+    ]
   },
   {
-    "id" : 30,
-    "question" : "What Wookie bounty hunter was nicknamed 'madclaw'?",
-    "questionType" : "multiple",
+    "id": 30,
+    "question": "What Wookie bounty hunter was nicknamed 'madclaw'?",
+    "questionType": "multiple",
     "difficulty": "easy",
-    "answers" : [
-      {"value" : "Tyvokka", "correct" : "yes"},
-      {"value" : "Krrsantan", "correct" : "no"},
-      {"value" : "Hanharr", "correct" : "no"},
-      {"value" : "Gungi", "correct" : "no"}
-      ]
+    "answers": [
+      {
+        "value": "Tyvokka",
+        "correct": "yes"
+      },
+      {
+        "value": "Krrsantan",
+        "correct": "no"
+      },
+      {
+        "value": "Hanharr",
+        "correct": "no"
+      },
+      {
+        "value": "Gungi",
+        "correct": "no"
+      }
+    ]
   },
   {
-    "id" : 31,
-    "question" : "What ocean planet was first introduced in the Star Wars Holiday Special?",
-    "questionType" : "multiple",
+    "id": 31,
+    "question": "What ocean planet was first introduced in the Star Wars Holiday Special?",
+    "questionType": "multiple",
     "difficulty": "medium",
-    "answers" : [
-      {"value" : "Panna", "correct" : "yes"},
-      {"value" : "Dagobah", "correct" : "no"},
-      {"value" : "Florrum", "correct" : "no"},
-      {"value" : "Kamino", "correct" : "no"}
-      ]
-  },
-  {
-    "id" : 32,
-    "question" : "What movie's alien species makes an appearance in the movie The Phantom Menace?",
-    "questionType" : "multiple",
-    "difficulty" : "hard",
-    "answers" : [
-      {"value" : "E.T.", "correct" : "yes"},
-      {"value" : "Avatar", "correct" : "no"},
-      {"value" : "Star Trek", "correct" : "no"},
-      {"value" : "Mars Attacks!", "correct" : "no"}
+    "answers": [
+      {
+        "value": "Panna",
+        "correct": "yes"
+      },
+      {
+        "value": "Dagobah",
+        "correct": "no"
+      },
+      {
+        "value": "Florrum",
+        "correct": "no"
+      },
+      {
+        "value": "Kamino",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 33,
-    "question" : "What's the name of the planet that Rey was abandonned by her parents?",
-    "questionType" : "multiple",
-    "difficulty" : "easy",
-    "answers" : [
-      {"value" : "Jakku", "correct" : "yes"},
-      {"value" : "Tatooine", "correct" : "no"},
-      {"value" : "Lah'mu", "correct" : "no"},
-      {"value" : "Mustafar", "correct" : "no"}
+    "id": 32,
+    "question": "What movie's alien species makes an appearance in the movie The Phantom Menace?",
+    "questionType": "multiple",
+    "difficulty": "hard",
+    "answers": [
+      {
+        "value": "E.T.",
+        "correct": "yes"
+      },
+      {
+        "value": "Avatar",
+        "correct": "no"
+      },
+      {
+        "value": "Star Trek",
+        "correct": "no"
+      },
+      {
+        "value": "Mars Attacks!",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 34,
-    "question" : "What is Kylo Ren's real name?",
-    "questionType" : "multiple",
-    "difficulty" : "easy",
-    "answers" : [
-      {"value" : "Ben Solo", "correct" : "yes"},
-      {"value" : "Beru Solo", "correct" : "no"},
-      {"value" : "Nicholas Carignan", "correct" : "no"},
-      {"value" : "Ginger Carignan", "correct" : "no"}
+    "id": 33,
+    "question": "What's the name of the planet that Rey was abandonned by her parents?",
+    "questionType": "multiple",
+    "difficulty": "easy",
+    "answers": [
+      {
+        "value": "Jakku",
+        "correct": "yes"
+      },
+      {
+        "value": "Tatooine",
+        "correct": "no"
+      },
+      {
+        "value": "Lah'mu",
+        "correct": "no"
+      },
+      {
+        "value": "Mustafar",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 35,
-    "question" : "Which episode was not directed by George Lucas?",
-    "questionType" : "multiple",
-    "difficulty" : "medium",
-    "answers" : [
-      {"value" : "Episode VI - Return of the Jedi", "correct" : "yes"},
-      {"value" : "Episode IV - A New Hope", "correct" : "no"},
-      {"value" : "Episode III - Revenge of the Sith", "correct" : "no"},
-      {"value" : "Episode II - Attack of the Clones", "correct" : "no"}
+    "id": 34,
+    "question": "What is Kylo Ren's real name?",
+    "questionType": "multiple",
+    "difficulty": "easy",
+    "answers": [
+      {
+        "value": "Ben Solo",
+        "correct": "yes"
+      },
+      {
+        "value": "Beru Solo",
+        "correct": "no"
+      },
+      {
+        "value": "Nicholas Carignan",
+        "correct": "no"
+      },
+      {
+        "value": "Ginger Carignan",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 36,
-    "question" : "Which system was destroyed by the First Order?",
-    "questionType" : "multiple",
-    "difficulty" : "medium",
-    "answers" : [
-      {"value" : "Hosnian", "correct" : "yes"},
-      {"value" : "Neimoidia", "correct" : "no"},
-      {"value" : "Jedha", "corret" : "no"},
-      {"value" : "Malastare", "correct" : "no"}
+    "id": 35,
+    "question": "Which episode was not directed by George Lucas?",
+    "questionType": "multiple",
+    "difficulty": "medium",
+    "answers": [
+      {
+        "value": "Episode VI - Return of the Jedi",
+        "correct": "yes"
+      },
+      {
+        "value": "Episode IV - A New Hope",
+        "correct": "no"
+      },
+      {
+        "value": "Episode III - Revenge of the Sith",
+        "correct": "no"
+      },
+      {
+        "value": "Episode II - Attack of the Clones",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 37,
-    "question" : "Which Star Wars star was nominated for an Academy Award?",
-    "questionType" : "multiple",
-    "difficulty" : "medium",
-    "answers" : [
-      {"value" : "Alec Guinness", "correct" : "yes"},
-      {"value" : "Dan-Huy Le", "correct" : "no"},
-      {"value" : "Harrison Ford", "correct" : "no"},
-      {"value" : "John Ratzenberger", "correct" : "no"}
+    "id": 36,
+    "question": "Which system was destroyed by the First Order?",
+    "questionType": "multiple",
+    "difficulty": "medium",
+    "answers": [
+      {
+        "value": "Hosnian",
+        "correct": "yes"
+      },
+      {
+        "value": "Neimoidia",
+        "correct": "no"
+      },
+      {
+        "value": "Jedha",
+        "corret": "no"
+      },
+      {
+        "value": "Malastare",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 38,
-    "question" : "Who was Princess Leia's only hope?",
-    "questionType" : "multiple",
-    "difficulty" : "easy",
-    "answers" : [
-      {"value" : "Obi Wan Kenobi", "correct" : "yes"},
-      {"value" : "Lena Eivy", "correct" : "no"},
-      {"value" : "Yoda", "correct" : "no"},
-      {"value" : "Emporer Palpatine", "correct" : "no"}
+    "id": 37,
+    "question": "Which Star Wars star was nominated for an Academy Award?",
+    "questionType": "multiple",
+    "difficulty": "medium",
+    "answers": [
+      {
+        "value": "Alec Guinness",
+        "correct": "yes"
+      },
+      {
+        "value": "Dan-Huy Le",
+        "correct": "no"
+      },
+      {
+        "value": "Harrison Ford",
+        "correct": "no"
+      },
+      {
+        "value": "John Ratzenberger",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 39,
-    "question" : "Why does Yoda say that he didn't want to train Luke Skywalker",
-    "questionType" : "multiple",
-    "difficulty" : "easy",
-    "answers" : [
-      {"value" : "Because he lacked patience", "correct" : "yes"},
-      {"value" : "Because Yoda didn't like him", "correct" : "no"},
-      {"value" : "Because he smells bad", "correct" : "no"},
-      {"value" : "Because he is annoying", "correct" : "no"}
+    "id": 38,
+    "question": "Who was Princess Leia's only hope?",
+    "questionType": "multiple",
+    "difficulty": "easy",
+    "answers": [
+      {
+        "value": "Obi Wan Kenobi",
+        "correct": "yes"
+      },
+      {
+        "value": "Lena Eivy",
+        "correct": "no"
+      },
+      {
+        "value": "Yoda",
+        "correct": "no"
+      },
+      {
+        "value": "Emporer Palpatine",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 40,
-    "question" : "What is Yoda's last name?",
-    "questionType" : "multiple",
-    "difficulty" : "medium",
-    "answers" : [
-      {"value" : "He does not have one", "correct" : "yes"},
-      {"value" : "Eivy", "correct" : "no"},
-      {"value" : "Carignan", "correct" : "no"},
-      {"value" : "He doesn't like to give it out", "correct" : "no"}
+    "id": 39,
+    "question": "Why does Yoda say that he didn't want to train Luke Skywalker",
+    "questionType": "multiple",
+    "difficulty": "easy",
+    "answers": [
+      {
+        "value": "Because he lacked patience",
+        "correct": "yes"
+      },
+      {
+        "value": "Because Yoda didn't like him",
+        "correct": "no"
+      },
+      {
+        "value": "Because he smells bad",
+        "correct": "no"
+      },
+      {
+        "value": "Because he is annoying",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 41,
-    "question" : "Did Luke Skywalker own a dog?",
-    "questionType" : "boolean",
-    "difficulty" : "hard",
-    "answers" : [
-      {"value" : "true", "correct" : "yes"},
-      {"value" : "false", "correct" : "no"}
+    "id": 40,
+    "question": "What is Yoda's last name?",
+    "questionType": "multiple",
+    "difficulty": "medium",
+    "answers": [
+      {
+        "value": "He does not have one",
+        "correct": "yes"
+      },
+      {
+        "value": "Eivy",
+        "correct": "no"
+      },
+      {
+        "value": "Carignan",
+        "correct": "no"
+      },
+      {
+        "value": "He doesn't like to give it out",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 42,
-    "question" : "Was the one of the original names for Luke Skywalker, Luke Starkiller?",
-    "questionType" : "boolean",
-    "difficulty" : "medium",
-    "answers" : [
-      {"value" : "true", "correct" : "yes"},
-      {"value" : "fasle", "correct" : "no"}
+    "id": 41,
+    "question": "Did Luke Skywalker own a dog?",
+    "questionType": "boolean",
+    "difficulty": "hard",
+    "answers": [
+      {
+        "value": "true",
+        "correct": "yes"
+      },
+      {
+        "value": "false",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 43,
-    "question" : "Was Alderaan the only planet that was destroyed by the Death Star?",
-    "questionType" : "boolean",
-    "difficulty" : "medium",
-    "answers" : [
-      {"value" : "true", "correct" : "yes"},
-      {"value" : "false", "correct" : "no"}
+    "id": 42,
+    "question": "Was the one of the original names for Luke Skywalker, Luke Starkiller?",
+    "questionType": "boolean",
+    "difficulty": "medium",
+    "answers": [
+      {
+        "value": "true",
+        "correct": "yes"
+      },
+      {
+        "value": "fasle",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 44,
-    "question" : "Is Oceania the name of the tyrannical government that the Rebels are fighting against?",
-    "questionType" : "boolean",
-    "difficulty" : "easy",
-    "answers" : [
-      {"value" : "false", "correct" : "yes"},
-      {"value" : "true", "correct" : "no"}
+    "id": 43,
+    "question": "Was Alderaan the only planet that was destroyed by the Death Star?",
+    "questionType": "boolean",
+    "difficulty": "medium",
+    "answers": [
+      {
+        "value": "true",
+        "correct": "yes"
+      },
+      {
+        "value": "false",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 45,
-    "question" : "Is it a blaster that Obi-Wan gives to Luke that once belonged to his father?",
-    "questionType" : "boolean",
-    "difficulty" : "easy",
-    "answers" : [
-      {"value" : "false", "correct" : "yes"},
-      {"value" : "true", "correct" : "no"}
+    "id": 44,
+    "question": "Is Oceania the name of the tyrannical government that the Rebels are fighting against?",
+    "questionType": "boolean",
+    "difficulty": "easy",
+    "answers": [
+      {
+        "value": "false",
+        "correct": "yes"
+      },
+      {
+        "value": "true",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 46,
-    "question" : "Is it in his 30's that Anakin becomes Darth Vader?",
-    "questionType" : "boolean",
-    "difficulty" : "hard",
-    "answers" : [
-      {"value" : "fasle", "correct" : "yes"},
-      {"value" : "true", "correct" : "no"}
+    "id": 45,
+    "question": "Is it a blaster that Obi-Wan gives to Luke that once belonged to his father?",
+    "questionType": "boolean",
+    "difficulty": "easy",
+    "answers": [
+      {
+        "value": "false",
+        "correct": "yes"
+      },
+      {
+        "value": "true",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 47,
-    "question" : "Is Padma 17-years-old when she comes queen?",
-    "questionType" : "boolean",
-    "difficulty" : "medium",
-    "answers" : [
-      {"value" : "false", "correct" : "yes"},
-      {"value" : "true", "correct" : "no"}
+    "id": 46,
+    "question": "Is it in his 30's that Anakin becomes Darth Vader?",
+    "questionType": "boolean",
+    "difficulty": "hard",
+    "answers": [
+      {
+        "value": "false",
+        "correct": "yes"
+      },
+      {
+        "value": "true",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 48,
-    "question" : "What does Yoda claim that Luke's training won't be complete until he does what?",
-    "questionType" : "multiple",
-    "difficulty" : "medium",
-    "answers" : [
-      {"value" : "Face Darth Vader", "correct" : "yes"},
-      {"value" : "Learn the truth about Leia", "correct" : "no"},
-      {"value" : "Builds a lightsaber", "correct" : "no"},
-      {"value" : "Faces off against Han", "correct" : "no"}
+    "id": 47,
+    "question": "Is Padme 17-years-old when she comes queen?",
+    "questionType": "boolean",
+    "difficulty": "medium",
+    "answers": [
+      {
+        "value": "false",
+        "correct": "yes"
+      },
+      {
+        "value": "true",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 49,
-    "question" : "Lando lost the Millenium Falcon to Han during a:",
-    "questionType" : "multiple",
-    "difficulty" : "easy",
-    "answers" : [
-      {"value" : "bet", "correct" : "yes"},
-      {"value" : "raid", "correct" : "no"},
-      {"value" : "battle", "correct" : "no"},
-      {"value" : "loosing his keys", "correct" : "no"}
+    "id": 48,
+    "question": "What does Yoda claim that Luke's training won't be complete until he does?",
+    "questionType": "multiple",
+    "difficulty": "medium",
+    "answers": [
+      {
+        "value": "Face Darth Vader",
+        "correct": "yes"
+      },
+      {
+        "value": "Learn the truth about Leia",
+        "correct": "no"
+      },
+      {
+        "value": "Builds a lightsaber",
+        "correct": "no"
+      },
+      {
+        "value": "Faces off against Han",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 50,
-    "question" : "What is the name of Luke's best friend, who later serves beside him in the Rebellion?",
-    "questionType" : "multiple",
-    "difficulty" : "medium",
-    "answers" : [
-      {"value" : "Biggs Darklighter", "correct" : "yes"},
-      {"value" : "Wedge Antilles", "correct" : "no"},
-      {"value" : "Nien Numb", "correct" : "no"},
-      {"value" : "Jon Veach", "correct" : "no"}
+    "id": 49,
+    "question": "Lando lost the Millenium Falcon to Han during a what?",
+    "questionType": "multiple",
+    "difficulty": "easy",
+    "answers": [
+      {
+        "value": "bet",
+        "correct": "yes"
+      },
+      {
+        "value": "raid",
+        "correct": "no"
+      },
+      {
+        "value": "battle",
+        "correct": "no"
+      },
+      {
+        "value": "loosing his keys",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 51,
-    "question" : "Who does Obi-Wan learn the force from?",
-    "questionType" : "multiple",
-    "difficulty" : "medium",
-    "answers" : [
-      {"value" : "Qui-Gon Jinn", "correct" : "yes"},
-      {"value" : "Susanna Lakey", "correct" : "no"},
-      {"value" : "Mace Windu", "correct" : "no"},
-      {"value" : "Yoda", "correct" : "no"}
+    "id": 50,
+    "question": "What is the name of Luke's best friend, who later serves beside him in the Rebellion?",
+    "questionType": "multiple",
+    "difficulty": "medium",
+    "answers": [
+      {
+        "value": "Biggs Darklighter",
+        "correct": "yes"
+      },
+      {
+        "value": "Wedge Antilles",
+        "correct": "no"
+      },
+      {
+        "value": "Nien Numb",
+        "correct": "no"
+      },
+      {
+        "value": "Jon Veach",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 52,
-    "question" : "Which name does Leia not have a family connection to?",
-    "questionType" : "multiple",
-    "difficulty" : "hard",
-    "answers" : [
-      {"value" : "Fett", "correct" : "yes"},
-      {"value" : "Amidala", "correct" : "no"},
-      {"value" : "Skywalker", "correct" : "no"},
-      {"value" : "Organa", "correct" : "no"}
+    "id": 51,
+    "question": "Who does Obi-Wan learn the force from?",
+    "questionType": "multiple",
+    "difficulty": "medium",
+    "answers": [
+      {
+        "value": "Qui-Gon Jinn",
+        "correct": "yes"
+      },
+      {
+        "value": "Susanna Lakey",
+        "correct": "no"
+      },
+      {
+        "value": "Mace Windu",
+        "correct": "no"
+      },
+      {
+        "value": "Yoda",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 53,
-    "question" : "Who has the first line in A New Hope?",
-    "questionType" : "multiple",
-    "difficulty" : "hard",
-    "answers" : [
-      {"value" : "C-3P0", "correct" : "yes"},
-      {"value" : "Princess Leia", "correct" : "no"},
-      {"value" : "R2-D2", "correct" : "no"},
-      {"value" : "Sarah Gilliam", "correct" : "no"}
+    "id": 52,
+    "question": "Which name does Leia not have a family connection to?",
+    "questionType": "multiple",
+    "difficulty": "hard",
+    "answers": [
+      {
+        "value": "Fett",
+        "correct": "yes"
+      },
+      {
+        "value": "Amidala",
+        "correct": "no"
+      },
+      {
+        "value": "Skywalker",
+        "correct": "no"
+      },
+      {
+        "value": "Organa",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 54,
-    "question" : "Who has the first line in Empire Strikes Back?",
-    "questionType" : "multiple",
-    "difficulty" : "hard",
-    "answers" : [
-      {"value" : "Luke Skywalker", "correct" : "yes"},
-      {"value" : "Chewbacca", "correct" : "no"},
-      {"value" : "Adrian Huebner", "correct" : "no"},
-      {"value" : "Han Solo", "correct" : "no"}
+    "id": 53,
+    "question": "Who has the first line in A New Hope?",
+    "questionType": "multiple",
+    "difficulty": "hard",
+    "answers": [
+      {
+        "value": "C-3P0",
+        "correct": "yes"
+      },
+      {
+        "value": "Princess Leia",
+        "correct": "no"
+      },
+      {
+        "value": "R2-D2",
+        "correct": "no"
+      },
+      {
+        "value": "Sarah Gilliam",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 55,
-    "question" : "Luke Skywalker's self-imposed exile takes place on what planet?",
-    "questionType" : "multiple",
-    "difficulty" : "medium",
-    "answers" : [
-      {"value" : "Ach-To", "correct" : "yes"},
-      {"value" : "Takodana", "correct" : "no"},
-      {"value" : "Dagobah", "correct" : "no"},
-      {"value" : "Tatooine", "correct" : "no"}
+    "id": 54,
+    "question": "Who has the first line in Empire Strikes Back?",
+    "questionType": "multiple",
+    "difficulty": "hard",
+    "answers": [
+      {
+        "value": "Luke Skywalker",
+        "correct": "yes"
+      },
+      {
+        "value": "Chewbacca",
+        "correct": "no"
+      },
+      {
+        "value": "Adrian Huebner",
+        "correct": "no"
+      },
+      {
+        "value": "Han Solo",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 56,
-    "question" : "Who has the first line in Return of the Jedi?",
-    "questionType" : "multiple",
-    "difficulty" : "hard",
-    "answers" : [
-      {"value" : "The random shuttle captain", "correct" : "yes"},
-      {"value" : "Yoda", "correct" : "no"},
-      {"value" : "Jabba the Hutt", "correct" : "no"},
-      {"value" : "Mace Windu", "correct" : "no"}
+    "id": 55,
+    "question": "Luke Skywalker's self-imposed exile takes place on what planet?",
+    "questionType": "multiple",
+    "difficulty": "medium",
+    "answers": [
+      {
+        "value": "Ach-To",
+        "correct": "yes"
+      },
+      {
+        "value": "Takodana",
+        "correct": "no"
+      },
+      {
+        "value": "Dagobah",
+        "correct": "no"
+      },
+      {
+        "value": "Tatooine",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 57,
-    "question" : "Who has the first line in The Phantom Menace?",
-    "questionType" : "multiple",
-    "difficulty" : "hard",
-    "answers" : [
-      {"value" : "Qui-Gon Jinn", "correct" : "yes"},
-      {"value" : "Obi-Wan Kenobi", "correct" : "no"},
-      {"value" : "Nute Gunray", "correct" : "no"},
-      {"value" : "Jabba the Hutt", "correct" : "no"}
+    "id": 56,
+    "question": "Who has the first line in Return of the Jedi?",
+    "questionType": "multiple",
+    "difficulty": "hard",
+    "answers": [
+      {
+        "value": "The random shuttle captain",
+        "correct": "yes"
+      },
+      {
+        "value": "Yoda",
+        "correct": "no"
+      },
+      {
+        "value": "Jabba the Hutt",
+        "correct": "no"
+      },
+      {
+        "value": "Mace Windu",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 58,
-    "question" : "At the beginning of A New Hope, what was Leia and her shipping carrying?",
-    "questionType" : "multiple",
-    "difficulty" : "medium",
-    "answers" : [
-      {"value" : "The secret plans to the Death Star", "correct" : "yes"},
-      {"value" : "Escaped Prisoners from the Empire", "correct" : "no"},
-      {"value" : "Untaxed death sticks", "correct" : "no"},
-      {"value" : "The main council of the Rebel Alliance", "correct" : "no"}
+    "id": 57,
+    "question": "Who has the first line in The Phantom Menace?",
+    "questionType": "multiple",
+    "difficulty": "hard",
+    "answers": [
+      {
+        "value": "Qui-Gon Jinn",
+        "correct": "yes"
+      },
+      {
+        "value": "Obi-Wan Kenobi",
+        "correct": "no"
+      },
+      {
+        "value": "Nute Gunray",
+        "correct": "no"
+      },
+      {
+        "value": "Jabba the Hutt",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 59,
-    "question" : "Complete a classic line: 'That's no moon; it's a...'",
-    "questionType" : "multiple",
-    "difficulty" : "medium",
-    "answers" : [
-      {"value" : "Space Station", "correct" : "yes"},
-      {"value" : "Spaceship", "correct" : "no"},
-      {"value" : "Droid", "correct" : "no"},
-      {"value" : "Time machine", "correct" : "no"}
+    "id": 58,
+    "question": "At the beginning of A New Hope, what was Leia and her shipping carrying?",
+    "questionType": "multiple",
+    "difficulty": "medium",
+    "answers": [
+      {
+        "value": "The secret plans to the Death Star",
+        "correct": "yes"
+      },
+      {
+        "value": "Escaped Prisoners from the Empire",
+        "correct": "no"
+      },
+      {
+        "value": "Untaxed death sticks",
+        "correct": "no"
+      },
+      {
+        "value": "The main council of the Rebel Alliance",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 60,
-    "question" : "How many engines does Princess Leia's ship carry in the beginning of A New Hope?",
-    "questionType" : "multiple",
-    "difficulty" : "medium",
-    "answers" : [
-      {"value" : "Eleven", "correct" : "yes"},
-      {"value" : "Fourteen", "correct" : "no"},
-      {"value" : "Ten", "correct" : "no"},
-      {"value" : "Twelve", "correct" : "no"}
+    "id": 59,
+    "question": "Complete a classic line: 'That's no moon; it's a...'",
+    "questionType": "multiple",
+    "difficulty": "medium",
+    "answers": [
+      {
+        "value": "Space Station",
+        "correct": "yes"
+      },
+      {
+        "value": "Spaceship",
+        "correct": "no"
+      },
+      {
+        "value": "Droid",
+        "correct": "no"
+      },
+      {
+        "value": "Time machine",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 61,
-    "question" : "What's on the menu for breakfast with Luke's Aunt Beru?",
-    "questionType" : "multiple",
-    "difficulty" : "easy",
-    "answers" : [
-      {"value" : "Blue Milk", "correct" : "yes"},
-      {"value" : "Red Butter", "correct" : "no"},
-      {"value" : "Purple Cereal", "correct" : "no"},
-      {"value" : "Green Toast", "correct" : "no"}
+    "id": 60,
+    "question": "How many engines does Princess Leia's ship carry in the beginning of A New Hope?",
+    "questionType": "multiple",
+    "difficulty": "medium",
+    "answers": [
+      {
+        "value": "Eleven",
+        "correct": "yes"
+      },
+      {
+        "value": "Fourteen",
+        "correct": "no"
+      },
+      {
+        "value": "Ten",
+        "correct": "no"
+      },
+      {
+        "value": "Twelve",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 62,
-    "question" : "During the attack on the first Death Star, what is Luke's call sign?",
-    "questionType" : "multiple",
-    "difficulty" : "medium",
-    "answers" : [
-      {"value" : "Red Five", "correct" : "yes"},
-      {"value" : "Red Nine", "correct" : "no"},
-      {"value" : "Rouge Five", "correct" : "no"},
-      {"value" : "Rouge Nine", "correct" : "no"}
+    "id": 61,
+    "question": "What's on the menu for breakfast with Luke's Aunt Beru?",
+    "questionType": "multiple",
+    "difficulty": "easy",
+    "answers": [
+      {
+        "value": "Blue Milk",
+        "correct": "yes"
+      },
+      {
+        "value": "Red Butter",
+        "correct": "no"
+      },
+      {
+        "value": "Purple Cereal",
+        "correct": "no"
+      },
+      {
+        "value": "Green Toast",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 63,
-    "question" : "What does the acronym in TIE fighter stand for?",
-    "questionType" : "multiple",
-    "difficulty" : "hard",
-    "answers" : [
-      {"value" : "Twin Ion Engine", "correct" : "yes"},
-      {"value" : "Total Imperial Evil", "correct" : "no"},
-      {"value" : "The Imperial Evil", "correct" : "no"},
-      {"value" : "Total Imperial Engine", "correct" : "no"}
+    "id": 62,
+    "question": "During the attack on the first Death Star, what is Luke's call sign?",
+    "questionType": "multiple",
+    "difficulty": "medium",
+    "answers": [
+      {
+        "value": "Red Five",
+        "correct": "yes"
+      },
+      {
+        "value": "Red Nine",
+        "correct": "no"
+      },
+      {
+        "value": "Rouge Five",
+        "correct": "no"
+      },
+      {
+        "value": "Rouge Nine",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 64,
-    "question" : "Which Captain recieves a battlefield promotion to Admiral when Vader force-chokes his boss before the Battle of Hoth?",
-    "questionType" : "multiple",
-    "difficulty" : "medium",
-    "answers" : [
-      {"value" : "Piett", "correct" : "yes"},
-      {"value" : "Ozzel", "correct" : "no"},
-      {"value" : "Veers", "correct" : "no"},
-      {"value" : "Rieeken", "correct" : "no"}
+    "id": 63,
+    "question": "What does the acronym in TIE fighter stand for?",
+    "questionType": "multiple",
+    "difficulty": "hard",
+    "answers": [
+      {
+        "value": "Twin Ion Engine",
+        "correct": "yes"
+      },
+      {
+        "value": "Total Imperial Evil",
+        "correct": "no"
+      },
+      {
+        "value": "The Imperial Evil",
+        "correct": "no"
+      },
+      {
+        "value": "Total Imperial Engine",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 65,
-    "question" : "Who is the lead singer in Jabba the Hutt's house band?",
-    "questionType" : "multiple",
-    "difficulty" : "hard",
-    "answers" : [
-      {"value" : "Sy Snootles", "correct" : "yes"},
-      {"value" : "Joh Yowza", "correct" : "no"},
-      {"value" : "Droppy McCool", "correct" : "no"},
-      {"value" : "Max Reebo", "correct" : "no"}
+    "id": 64,
+    "question": "Which Captain recieves a battlefield promotion to Admiral when Vader force-chokes his boss before the Battle of Hoth?",
+    "questionType": "multiple",
+    "difficulty": "medium",
+    "answers": [
+      {
+        "value": "Piett",
+        "correct": "yes"
+      },
+      {
+        "value": "Ozzel",
+        "correct": "no"
+      },
+      {
+        "value": "Veers",
+        "correct": "no"
+      },
+      {
+        "value": "Rieeken",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 66,
-    "question" : "What is the Emperor's name?",
-    "questionType" : "multiple",
-    "difficulty" : "easy",
-    "answers" : [
-      {"value" : "Palpatine", "correct" : "yes"},
-      {"value" : "Dooku", "correct" : "no"},
-      {"value" : "Grevious", "correct" : "no"},
-      {"value" : "Nero", "correct" : "no"}
+    "id": 65,
+    "question": "Who is the lead singer in Jabba the Hutt's house band?",
+    "questionType": "multiple",
+    "difficulty": "hard",
+    "answers": [
+      {
+        "value": "Sy Snootles",
+        "correct": "yes"
+      },
+      {
+        "value": "Joh Yowza",
+        "correct": "no"
+      },
+      {
+        "value": "Droppy McCool",
+        "correct": "no"
+      },
+      {
+        "value": "Max Reebo",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 67,
-    "question" : "What species is Jar Jar Binks?",
-    "questionType" : "multiple",
-    "difficulty" : "hard",
-    "answers" : [
-      {"value" : "Gungan", "correct" : "yes"},
-      {"value" : "Naboo", "correct" : "no"},
-      {"value" : "Toydarian", "correct" : "no"},
-      {"value" : "Neimoidian", "correct" : "no"}
+    "id": 66,
+    "question": "What is the Emperor's name?",
+    "questionType": "multiple",
+    "difficulty": "easy",
+    "answers": [
+      {
+        "value": "Palpatine",
+        "correct": "yes"
+      },
+      {
+        "value": "Dooku",
+        "correct": "no"
+      },
+      {
+        "value": "Grevious",
+        "correct": "no"
+      },
+      {
+        "value": "Nero",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 68,
-    "question" : "What is the first time that we see Yoda using a lightsaber?",
-    "questionType" : "multiple",
-    "difficulty" : "medium",
-    "answers" : [
-      {"value" : "Episode II - Attack of The Clones", "correct" : "yes"},
-      {"value" : "Episode V -  The Empire Strikes Back", "correct" : "no"},
-      {"value" : "Never - Yoda does not use violence", "correct" : "no"},
-      {"value" : "Episode III - Revenge of the Sith", "correct" : "no"}
+    "id": 67,
+    "question": "What species is Jar Jar Binks?",
+    "questionType": "multiple",
+    "difficulty": "hard",
+    "answers": [
+      {
+        "value": "Gungan",
+        "correct": "yes"
+      },
+      {
+        "value": "Naboo",
+        "correct": "no"
+      },
+      {
+        "value": "Toydarian",
+        "correct": "no"
+      },
+      {
+        "value": "Neimoidian",
+        "correct": "no"
+      }
     ]
   },
   {
-    "id" : 69,
-    "question" : "What is the name of the lava planet where Obi-Wan and Anakin fight at the end of Revenge of the Sith?",
-    "questionType" : "multiple",
-    "difficulty" : "medium",
-    "answers" : [
-      {"value" : "Mustafar", "correct" : "yes"},
-      {"value" : "Geonosis", "correct" : "no"},
-      {"value" : "Kamino", "correct" : "no"},
-      {"value" : "Utapuh", "correct" : "no"}
+    "id": 68,
+    "question": "What is the first time that we see Yoda using a lightsaber?",
+    "questionType": "multiple",
+    "difficulty": "medium",
+    "answers": [
+      {
+        "value": "Episode II - Attack of The Clones",
+        "correct": "yes"
+      },
+      {
+        "value": "Episode V -  The Empire Strikes Back",
+        "correct": "no"
+      },
+      {
+        "value": "Never - Yoda does not use violence",
+        "correct": "no"
+      },
+      {
+        "value": "Episode III - Revenge of the Sith",
+        "correct": "no"
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "question": "What is the name of the lava planet where Obi-Wan and Anakin fight at the end of Revenge of the Sith?",
+    "questionType": "multiple",
+    "difficulty": "medium",
+    "answers": [
+      {
+        "value": "Mustafar",
+        "correct": "yes"
+      },
+      {
+        "value": "Geonosis",
+        "correct": "no"
+      },
+      {
+        "value": "Kamino",
+        "correct": "no"
+      },
+      {
+        "value": "Utapuh",
+        "correct": "no"
+      }
     ]
   }
 ]
-
-
