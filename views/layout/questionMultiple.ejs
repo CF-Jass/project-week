@@ -1,7 +1,9 @@
 <% function getRandomNumber(min, max) { %>
 <%  return Math.floor(Math.random() * (max - min)) + min; %>
 <% } %>
+
 <% let recentQuestion = []; %>
+
 <% function getUniqueIndex() { %>
 <%  let randomIndex = getRandomNumber(0, dummyData.answers.length - 1); %>
 <%  while (recentQuestion.includes(randomIndex)) { %>

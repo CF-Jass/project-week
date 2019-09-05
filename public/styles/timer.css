@@ -42,8 +42,7 @@
   0 0 1em rgb(0, 255, 0);
   height: 40%;
   position: absolute;
-  transition: width 1s;
-  width: 30em;
+  width: 0em;
   z-index: 1;
 }
 
