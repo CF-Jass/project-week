@@ -5,6 +5,7 @@
 </head>
 
 <body>
+  <% let recentQuestionJson = JSON.stringify(recentQuestion) %>
   <h2 id="question-title">Number of questions left: <%= (21 - recentQuestion.length) %></h2>
   <div id="lightsaber-timer">
     <%- include('../layout/timer.ejs') %>
@@ -12,6 +13,9 @@
   <div id="trivia-box">
     <form action="/submit" method="POST">
       <input type="hidden" id="submit_post_username" name="username" value="">
+      <input type="hidden" id="submit_post_recentQuestion" name="recentQuestion" value="<%= recentQuestionJson %>">
+      <input type="hidden" id="submit_post_numOfCorrectAnswers" name="numOfCorrectAnswers" value="<%= numOfCorrectAnswers %>">
+      
       <fieldset>
         <div id="trivia-answers">
           <legend><%= questionData %></legend>

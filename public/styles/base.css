@@ -1,3 +1,8 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
