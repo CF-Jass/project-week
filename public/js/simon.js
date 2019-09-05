@@ -1,5 +1,6 @@
 'use strict';
 
+// SIMON CONSTRUCTOR //
 function SimonGame (highlightMs, delayMs){
   this.isRunning = false;
   this.challengeArr = [];
@@ -23,6 +24,7 @@ SimonGame.prototype.start = function (){
   this.nextRound();
 }
 
+// This adds another button to the cycle
 SimonGame.prototype.nextRound = function (){
   this.playerClicksArr = [];
   let selectedButtonIndex = Math.floor(Math.random() * this.buttons.length);
@@ -30,6 +32,8 @@ SimonGame.prototype.nextRound = function (){
   this.presentChallenge(this.challengeArr, 0);
 }
 
+// This presents the challenge to the player using recursion
+// while the currentIndex is >= the challenge array that is passed in.
 SimonGame.prototype.presentChallenge = function (arr, currentIndex){
   if(currentIndex >= arr.length){
     return;
@@ -41,6 +45,7 @@ SimonGame.prototype.presentChallenge = function (arr, currentIndex){
   })
 }
 
+// This is used to verify the players clicks against the challenges clicks in the array
 SimonGame.prototype.verifyOrder = function (){
   if(this.playerClicksArr.length > this.challengeArr.length){
     return false;
@@ -53,6 +58,8 @@ SimonGame.prototype.verifyOrder = function (){
   return true;
 }
 
+// When the player loses, we want to updated the sccore by posting to /addscore
+// then on done, we want to change to the /scores page.
 SimonGame.prototype.lose = function() {
   this.isRunning = false;
   $.post('/addScore', {
@@ -62,11 +69,13 @@ SimonGame.prototype.lose = function() {
   }).done(() => { console.log('done!'); window.location.pathname = '/scores'; });
 }
 
-
+// We want there to always be 4 digits on the score
 SimonGame.prototype.updatePoints = function (){
   $('#simon_points').text(this.points.toString().padStart(4, '0'));
 }
 
+
+// SIMON BUTTON CONSTRUCTOR //
 function SimonButton (buttonEl, game){
   this.buttonEl = buttonEl;
   this.game = game;
@@ -89,6 +98,7 @@ function SimonButton (buttonEl, game){
   });
 }
 
+// We want to light up the button, and also remove the class that lights it up while using the highlightMS.
 SimonButton.prototype.highlight = function (onHightlightDone){
   const button = this;
   button.buttonEl.addClass('simon_button_lit');
@@ -98,6 +108,8 @@ SimonButton.prototype.highlight = function (onHightlightDone){
   }, button.game.highlightMs);
 }
 
+// New instance with highlighted MS and the delay MS
 var simon = new SimonGame(500, 250);
 
+// Start button
 $('#simon_start_button').on('click', () => {simon.start()});
