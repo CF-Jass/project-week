@@ -11,6 +11,7 @@
   </div>
   <div id="trivia-box">
     <form action="/submit" method="POST">
+      <input type="hidden" id="submit_post_username" name="username" value="">
       <fieldset>
         <div id="trivia-answers">
           <legend><%= questionData %></legend>
@@ -23,6 +24,10 @@
       </fieldset>
     </form>
   </div>
+  <script lang="javascript">
+    document.getElementById('submit_post_username').value = localStorage.getItem("username");
+  </script>
+
 
   <img id="yoda-trivia-img" src="/img/yode_full_body.png" />
   <h1 class="main-header" id="trivia-header">Yoda's Trivia</h1>

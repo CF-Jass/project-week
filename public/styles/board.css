@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant&display=swap');
 
 .centerx{
   margin: 0 auto;
   text-align: center;
-  margin-top: 10em;
+  margin-top: 1em;
   width: 100%;
+  position: relative;
 }
 
 #four_in_a_row_container{
@@ -57,6 +59,7 @@
   margin-top: 2em;
   align-items: center;
 }
+
 #four_in_a_row_start:hover {
   background-color: #868686;
 }
@@ -66,50 +69,59 @@
 
 
 #leaderboard {
-  height: 300px;
-  width: 300px;
-  background-color: black;
+  height: 30em;
+  width: 30em;
+  background-color: rgb(44, 44, 44);
   background-image: url('../img/yode_full_body.png');
   background-repeat: no-repeat;
-  background-size: 9em;
-  background-position-x: 1.1em;
-  background-position-y: 2em;
+  background-size: 22em;
+  background-position-x: 0.1em;
+  background-position-y: 10em;
   border: 2px solid white;
-  border-radius: 180px;
-  z-index: +1;
+  border-radius: 100%;
+  z-index: 1;
   position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
   top: -1000px;
   transition: 2000ms;
-  display: block;
+  display: inline-block;
+  opacity: 0.9;
 }
 
 #leaderboardMessage {
   text-align: center;
   color: white;
-  font-family: monospace;
-  font-size: 18px;
-  margin-top: 100px;
-  margin-left: 100px;
-  display: inline-block;
+  font-family: 'Assistant', sans-serif;
+  font-size: 2.1em;
+  margin-top: 2em;
+  margin-bottom: 20px;
+  display: block;
 }
 
 
 #goToLeaderboard {
-  position: absolute;
-  display: inline-block;
+  position: relative;
+  display: block;
   color: white;
-  font-family: monospace;
-  font-size: 15px;
+  font-family: 'Assistant', sans-serif;
+  font-size: 2em;
   /* font-weight: bold; */
-  width: 125px;
-  background-color: rgb(175, 175, 175);
-  border-radius: 80px;
+  width: 6em;
+  background-color: rgb(126, 126, 126);
+  border-radius: 1em;
   padding:5px;
   margin: 0 auto;
+  text-decoration: none;
+}
+
+#goHomeLink{
+  text-decoration: none;
 }
 
 #imageSlideInYoda {
-  height: 15em;
+  height: 17em;
   z-index: +1;
   position: absolute;
   top: -1000px;

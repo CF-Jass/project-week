@@ -11,7 +11,7 @@
   <div id="choose-game">
     <div id="yoda-trivia-option">
       <img id="yoda-head" src="/img/yoda_head_shot.png" />
-      <form id="triva_link" class="form1" action="/triva" method="get">
+      <form id="triva_link" class="form1" action="/trivia" method="get">
         <button class="button">Yoda's Trivia</button>
       </form>
     </div>
@@ -23,7 +23,7 @@
     </div>
     <div id="luke-trivia-option">
       <img id="luke-head" src="/img/luke_head_shot.png" />
-      <form id="triva_link" class="form1" action="/simon" method="get">
+      <form id="triva_link" class="form1" action="/board" method="get">
         <button class="button">Luke Strikes Back</button>
       </form>
     </div>
@@ -31,5 +31,13 @@
 
 
   <%- include('../layout/footer.ejs') %>
+
+  <!-- The username is embedded into the local storage using ejs -->
+  <script lang="javascript">
+    const username = '<%= username %>';
+    if (username) {
+      window.localStorage.setItem('username', username);
+    }
+  </script>
 </body>
 
