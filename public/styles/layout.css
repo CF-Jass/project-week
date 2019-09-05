@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Assistant&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
 
+/* To do 
+add in about us info
+*/
+
 body {
   background-image: url('../img/starry.jpg');
   font-family: 'Assistant', sans-serif;
   background-repeat: no-repeat;
   color: white;
   width: 375px;
-
+letter-spacing: 0.1em;
 }
 
 #all-about-us {
@@ -18,8 +22,6 @@ body {
   width: 80%;
   justify-content: center;
 }
-
-
 
 .about-us {
   width: 40%;
@@ -34,6 +36,7 @@ body {
 .about-us p {
   width: 100%;
   font-size: 20px;
+  background: rgba(0, 0, 0, 0.44);
 }
 
 #trivia-box {
@@ -110,20 +113,6 @@ body {
 }
 
 
-/* #simon-flex {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-#lightsaber-timer {
-  margin: auto;
-  width: 60%;
-  margin-top: 40px;
-} */
-
 #score-td {
   text-align: center;
 }
@@ -134,7 +123,8 @@ body {
 }
 
 #timer-outer {
-  width: 100%;
+  width: 40%;
+  text-align: center;
 }
 
 #score-box {
@@ -199,6 +189,7 @@ body {
   .about-us {
     width: 40%;
     margin: 50px 15px;
+  
     /* text-align: center; */
   }
   
@@ -208,6 +199,7 @@ body {
   
   .about-us p {
     width: 100%;
+    background: rgba(12, 12, 12, 0.632);
   }
 }
 
@@ -244,7 +236,7 @@ body {
   }
   
   .about-us p {
-    background: rgba(0, 0, 0, 0.276);
+    background: rgba(12, 12, 12, 0.632);
   }
 
   
