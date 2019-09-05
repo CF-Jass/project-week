@@ -41,7 +41,7 @@ app.post('/addScore', addScore);
 app.get('*', (req, res) => { res.status(404).render('pages/error') });
 
 //global vars
-const dummyData = require('./data/dummyData.json');
+const StarWarsData = require('./data/StarWarsData.json');
 
 //functions
 function home(req, res) {
@@ -116,7 +116,7 @@ function nextTriviaQuestion(req, res) {
     res.redirect('/scores');
   } else {
     let getRandomQuestion = getUniqueIndex(recentQuestion);
-    let singleQuestion = dummyData[getRandomQuestion];
+    let singleQuestion = StarWarsData[getRandomQuestion];
     superagent
       .post('https://api.funtranslations.com/translate/yoda.json')
       .send({ text: singleQuestion.question })
@@ -125,7 +125,7 @@ function nextTriviaQuestion(req, res) {
       .then(responseFromSuper => res.render('./pages/trivia',
         { 
           questionData: responseFromSuper.body.contents.translated,
-          dummyData: singleQuestion,
+          StarWarsData: singleQuestion,
           recentQuestion: recentQuestion,
           numOfCorrectAnswers: numOfCorrectAnswers
         }));
@@ -144,11 +144,11 @@ function getRandomNumber(min, max) {
 }
 
 function getUniqueIndex(recentQuestion) {
-  let randomIndex = getRandomNumber(0, dummyData.length - 1);
+  let randomIndex = getRandomNumber(0, StarWarsData.length - 1);
   while (recentQuestion.includes(randomIndex)) {
-    randomIndex = getRandomNumber(0, dummyData.length);
+    randomIndex = getRandomNumber(0, StarWarsData.length);
   }
-  if (recentQuestion.length > dummyData.length) {
+  if (recentQuestion.length > StarWarsData.length) {
     recentQuestion.shift();
   }
   recentQuestion.push(randomIndex);

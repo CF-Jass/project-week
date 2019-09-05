@@ -1,7 +1,7 @@
 <%- include('../layout/head.ejs') %>
 <%- include('../layout/css.ejs') %>
 
-  <title>Trivia</title>
+  <title>Yoda's Trivia</title>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
       <fieldset>
         <div id="trivia-answers">
           <legend><%= questionData %></legend>
-          <% if (dummyData.questionType === 'boolean') { %>
+          <% if (StarWarsData.questionType === 'boolean') { %>
           <%- include('../layout/questionBoolean') %>
           <% } else { %>
           <%- include('../layout/questionMultiple') %>

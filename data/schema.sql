@@ -3,11 +3,14 @@
 
 -- \c cfjazz
 
+DROP TABLE highscores;
+
 CREATE TABLE highscores (
   id SERIAL PRIMARY KEY,
   username VARCHAR(255),
   date VARCHAR(255),
-  score BIGINT
+  score BIGINT,
+  game VARCHAR(255)
 );
 
 -- INSERT INTO highscores (username, date, score) VALUES ('User1', '09/01/2019', '10000');
