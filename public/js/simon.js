@@ -56,11 +56,12 @@ SimonGame.prototype.verifyOrder = function (){
 SimonGame.prototype.lose = function() {
   this.isRunning = false;
   $.post('/addScore', {
-    username: window.localStorage.getItem('username'), 
-    game: 'Simon', 
+    username: window.localStorage.getItem('username'),
+    game: 'Simon',
     score: this.points
-  }).done(() => { console.log("done!"); window.location.pathname = '/scores'; });
+  }).done(() => { console.log('done!'); window.location.pathname = '/scores'; });
 }
+
 
 SimonGame.prototype.updatePoints = function (){
   $('#simon_points').text(this.points.toString().padStart(4, '0'));

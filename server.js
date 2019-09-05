@@ -27,13 +27,11 @@ app.use(methodOverride((request, response) => {
 
 //routes
 app.get('/', home);
-// app.get('/start', loadUsername);
 app.get('/gamepage', loadGamePage)
-app.post('/gamepage', loadGamePage)
 app.get('/quiz', loadGame);
 app.post('/submit', validateAnswer);
 app.get('/scores', loadScores);
-app.get('/triva', loadGame);
+app.get('/trivia', loadGame);
 app.get('/simon', loadSimon);
 app.get('/board', loadBoard);
 app.get('/boardresult', loadBoardResult);
@@ -50,7 +48,6 @@ app.get('*', (req, res) => { res.status(404).render('pages/error') });
 const dummyData = require('./data/dummyData.json');
 let recentQuestion = [];
 let numOfCorrectAnswers = 0;
-let username;
 
 //functions
 function home(req, res) {
@@ -58,26 +55,20 @@ function home(req, res) {
   res.render('./pages/index');
 }
 
-function loadUsername(req, res) {
-  res.render('./pages/username');
-}
-
 function loadAboutUs(req, res) {
   res.render('./pages/aboutus');
 }
 
 function validateAnswer(req, res) {
-  let selectedAnswer = req.body.answer
+  const username = req.body.username;
+  let selectedAnswer = req.body.answer;
   if (selectedAnswer === 'yes') {
     numOfCorrectAnswers++;
   }
-  res.redirect('/quiz');
+  res.redirect('/quiz?username=' + username);
 }
 
 function loadGamePage(req, res) {
-  if (!username) {
-    username = req.body.username;
-  }
   res.render('./pages/gamepage', { username: req.query.username });
 }
 
@@ -95,12 +86,12 @@ function loadBoardResult(req, res) {
 
 function addScore(req, res) {
   //let sqlInsert = 'INSERT INTO highscores (username, date, score, game) VALUES ($1, $2, $3, $4);'
-  console.log("updateAndViewScores called: ", req.body);
+  console.log('updateAndViewScores called: ', req.body);
   let sqlInsert = 'INSERT INTO highscores (username, date, score) VALUES ($1, $2, $3);';
   let sqlArray = [
     req.body.username,
     new Date(Date.now()).toDateString(),
-    req.body.score   //,
+    req.body.score //,
     //req.body.game
   ];
   client.query(sqlInsert, sqlArray);
@@ -110,7 +101,7 @@ function addScore(req, res) {
 function loadGame(req, res) {
   if (recentQuestion.length >= 20) {
     let sqlInsert = 'INSERT INTO highscores (username, date, score) VALUES ($1, $2, $3);'
-    let sqlArray = [username, new Date(Date.now()).toDateString(), numOfCorrectAnswers]
+    let sqlArray = [req.query.username, new Date(Date.now()).toDateString(), numOfCorrectAnswers]
     client.query(sqlInsert, sqlArray);
     recentQuestion = [];
     numOfCorrectAnswers = 0;
@@ -125,7 +116,12 @@ function loadGame(req, res) {
       .send({ text: singleQuestion.question })
       .set('X-Funtranslations-Api-Secret', process.env.YODA_API)
       .set('Accept', 'application/json')
-      .then(responseFromSuper => res.render('./pages/trivia', { questionData: responseFromSuper.body.contents.translated, dummyData: singleQuestion, recentQuestion: recentQuestion, username: username }));
+      .then(responseFromSuper => res.render('./pages/trivia',
+        { 
+          questionData: responseFromSuper.body.contents.translated,
+          dummyData: singleQuestion,
+          recentQuestion: recentQuestion
+        }));
   }
 }
 
