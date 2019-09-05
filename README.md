@@ -75,3 +75,5 @@ https://stackoverflow.com/questions/5915096/get-random-item-from-javascript-arra
 https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 https://scotch.io/bar-talk/build-a-lightsaber-with-css-and-a-checkbox-solution-to-code-challenge-3
 https://cssbuttoncreator.com/
+
+* AI component of Luke Strikes Back was made with assistance from Shai Duvdevani.
