@@ -1598,5 +1598,93 @@
         "correct": "no"
       }
     ]
+  },
+  {
+    "id": 70,
+    "question" : "What color lasers do the X-Wing shoot?",
+    "questionType" : "multiple",
+    "difficulty" : "medium",
+    "answers" : [
+      {"value" : "Red", "correct" : "yes"},
+      {"value" : "Purple", "correct" : "no"},
+      {"value" : "Orange", "correct" : "no"},
+      {"value" : "Green", "correct" : "no"} 
+    ]
+  },
+  {
+    "id": 71,
+    "question" : "Is Yoda 900-Years-Old when he passes away?",
+    "questionType" : "boolean",
+    "difficulty" : "hard",
+    "answers" : [
+      {"value" : "true", "correct" : "yes"},
+      {"value" : "false", "correct" : "no"}
+    ]
+  },
+  {
+    "id": 72,
+    "question" : "Was Darth Maul NOT a member of the Separatist Council?",
+    "questionType" : "boolean",
+    "difficulty" : "medium",
+    "answers" : [
+      {"value" : "true", "correct" : "yes"},
+      {"value" : "false", "correct" : "no"}
+    ]
+  },
+  {
+    "id": 73,
+    "question" : "How did Han Solo and Chewbacca meet each other?",
+    "questionType" : "multiple",
+    "difficulty" : "hard",
+    "answers" : [
+      {"value" : "As prisoners of the Empire", "correct" : "yes"},
+      {"value" : "As liberators of the Kashyyyk", "correct" : "no"},
+      {"value" : "As smugglers during a heist-gone-wrong", "correct" : "no"},
+      {"value" : "They grew up with each other", "correct" : "no"} 
+    ]
+  },
+  {
+    "id": 74,
+    "question" : "Does R2-D2 carry a message for Luke?",
+    "questionType" : "boolean",
+    "difficulty" : "easy",
+    "answers" : [
+      {"value" : "false", "correct" : "yes"},
+      {"value" : "true", "correct" : "no"} 
+    ]
+  },
+  {
+    "id": 75,
+    "question" : "What species is never mentioned during the films?",
+    "questionType" : "multiple",
+    "difficulty" : "medium",
+    "answers" : [
+      {"value" : "Ewoks", "correct" : "yes"},
+      {"value" : "Jawas", "correct" : "no"},
+      {"value" : "Wookies", "correct" : "no"},
+      {"value" : "Dugs", "correct" : "no"} 
+    ]
+  },
+  {
+    "id": 76,
+    "question" : "Saw Gerrera IS a Guardian of the Whills?",
+    "questionType" : "boolean",
+    "difficulty" : "medium",
+    "answers" : [
+      {"value" : "false", "correct" : "yes"},
+      {"value" : "true", "correct" : "no"}
+    ]
+  },
+  {
+    "id": 77,
+    "question" : "What species are Jabba the Hutt's pig-like guards?",
+    "questionType" : "multiple",
+    "difficulty" : "hard",
+    "answers" : [
+      {"value" : "Gamorrean", "correct" : "yes"},
+      {"value" : "Swinelian", "correct" : "no"},
+      {"value" : "Hogorrean", "correct" : "no"},
+      {"value" : "Wookies", "correct" : "no"} 
+    ]
   }
 ]
