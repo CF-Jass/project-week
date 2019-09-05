@@ -110,7 +110,7 @@ function loadGame(req, res) {
     // console.log(`Length is ${recentQuestion.length}, Our recent question array is ${recentQuestion}`)
     // console.log(`username is ${username}`)
     // console.log()
-    console.log(newUser);
+    // console.log(newUser);
     let getRandomQuestion = getUniqueIndex();
     let singleQuestion = dummyData[getRandomQuestion];
     superagent
