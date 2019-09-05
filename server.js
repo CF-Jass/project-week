@@ -83,13 +83,14 @@ function loadBoardResult(req, res) {
 }
 
 function addScore(req, res) {
-  //let sqlInsert = 'INSERT INTO highscores (username, date, score, game) VALUES ($1, $2, $3, $4);'
-  let sqlInsert = 'INSERT INTO highscores (username, date, score) VALUES ($1, $2, $3);';
+  console.log(req.query)
+  let sqlInsert = 'INSERT INTO highscores (username, date, score, game) VALUES ($1, $2, $3, $4);'
+  // let sqlInsert = 'INSERT INTO highscores (username, date, score) VALUES ($1, $2, $3);';
   let sqlArray = [
     req.body.username,
     new Date(Date.now()).toDateString(),
-    req.body.score //,
-    //req.body.game
+    req.body.score,
+    req.body.game
   ];
   client.query(sqlInsert, sqlArray);
   res.sendStatus(200);
@@ -110,8 +111,9 @@ function nextTriviaQuestion(req, res) {
     : 0;
 
   if (recentQuestion.length >= 20) {
-    let sqlInsert = 'INSERT INTO highscores (username, date, score) VALUES ($1, $2, $3);'
-    let sqlArray = [req.query.username, new Date(Date.now()).toDateString(), numOfCorrectAnswers]
+    let sqlInsert = 'INSERT INTO highscores (username, date, score, game) VALUES ($1, $2, $3, $4);'
+    // let sqlInsert = 'INSERT INTO highscores (username, date, score) VALUES ($1, $2, $3);'
+    let sqlArray = [req.query.username, new Date(Date.now()).toDateString(), numOfCorrectAnswers, 'trivia'];
     client.query(sqlInsert, sqlArray);
     res.redirect('/scores');
   } else {
@@ -133,8 +135,10 @@ function nextTriviaQuestion(req, res) {
 }
 
 function loadScores(req, res) {
-  client.query('SELECT * FROM highscores ORDER BY score desc').then(resultFromSQL => {
-    res.render('./pages/scores', { scores: resultFromSQL.rows });
+  client.query(`SELECT * FROM highscores where game='trivia' ORDER BY score desc LIMIT 20`).then(resultFromSQL1 => {
+    client.query(`SELECT * FROM highscores where game='simon' ORDER BY score desc LIMIT 20`).then(resultFromSQL2 => {
+      res.render('./pages/scores', { trivia: resultFromSQL1.rows, simon: resultFromSQL2.rows });
+    })
   })
 }
 

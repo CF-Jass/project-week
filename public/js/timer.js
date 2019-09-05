@@ -45,6 +45,6 @@ Timer.prototype.resume = function () {
   this.running = true;
 }
 
-var timer = new Timer(300, 1000, 'trivia_timer', () => {
+var timer = new Timer(180, 1000, 'trivia_timer', () => {
   window.location.pathname = '/scores';
 })
