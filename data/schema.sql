@@ -1,7 +1,7 @@
-DROP DATABASE cfjazz;
-CREATE DATABASE cfjazz;
+-- DROP DATABASE cfjazz;
+-- CREATE DATABASE cfjazz;
 
-\c cfjazz
+-- \c cfjazz
 
 CREATE TABLE highscores (
   id SERIAL PRIMARY KEY,

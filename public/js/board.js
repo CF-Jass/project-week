@@ -7,7 +7,7 @@ const maxInARow = 5;
 const useAIForSecondPlayer = true;
 const absurdlyBig = 9999999;
 
-// There are 2 directions in every line. 
+// There are 2 directions in every line.
 // In horizontal line, there is left right
 // In vertical line, there is up down
 // In diagonal forward, there is upright and leftdown
@@ -155,8 +155,14 @@ function playCell(cellEl) {
   if (checkForWin(cellEl)){
     isGameRunning = false;
     setTimeout(()=> {
-      alert('Insert name of player ' + (currentPlayer + 1) + ' won');
-    }, 200);
+      if (currentPlayer === 0) {
+        // human won
+        bringDownYodaWin();
+      } else {
+        // computer won
+        bringDownYodaLose();
+      }
+    }, 500);
   }
   else {
     nextPlayer();
@@ -198,7 +204,9 @@ function playAITurn() {
   }
 
   if (scoresForMoves.length === 0) {
-    alert("There are no more possible moves");
+    setTimeout(()=> {
+      bringDownYodaLose();
+    }, 300)
     return;
   }
 
@@ -219,8 +227,8 @@ function isAdjacentToOccupied(row, col) {
     const currentLine = lines[l];
     // CurrentLine for example is "Up Down"
     // [
-    //   { col: 0, row: -1}, // up 
-    //   { col: 0, row: 1}  // down 
+    //   { col: 0, row: -1}, // up
+    //   { col: 0, row: 1}  // down
     // ]
     for (let d = 0; d < currentLine.length; ++d) {
       const currentDir = currentLine[d];
@@ -244,7 +252,7 @@ function isAdjacentToOccupied(row, col) {
 // The lower the score, the better it is for the human player
 function seeHowWeLikeThisBoardNow() {
   const humanScore = getScoreForPlayer(0);
-  const computerScore = getScoreForPlayer(1);  
+  const computerScore = getScoreForPlayer(1);
   return computerScore - humanScore;
 }
 
@@ -275,7 +283,7 @@ function getScoreForPlayer(player) {
   return overall_board_score_for_player;
 }
 
-// This simple scoring function only looks at streaks and so if someone 
+// This simple scoring function only looks at streaks and so if someone
 // plays with a gap on purpose, it will outsmart the scoring
 function getScoreForPlayerForCell(cellEl) {
   let result_score = 0;
@@ -287,7 +295,7 @@ function getScoreForPlayerForCell(cellEl) {
 
     // For every direction, apart from the streak array we also keep
     // an array of "holes" that are still playable
-    let playableCells = [];  // This does not exist in checkForWin
+    let playableCells = []; // This does not exist in checkForWin
     for (let directionNum = 0; directionNum < currentLine.length; directionNum++) {
       let currentDirection = currentLine[directionNum];
 
@@ -331,7 +339,7 @@ function getScoreForPlayerForCell(cellEl) {
     // then it's a great move, but still a thousand times worse than winning
     if (winningCells.length === (maxInARow - 1) && playableCells.length > 0) {
       return absurdlyBig/1000;
-    } 
+    }
 
     // Otherwise, a good ove is a move that has a longer streak with more playable options
     // 0 playable cells is 0 score for the move because we will never be able to get a 4
@@ -344,7 +352,12 @@ function getScoreForPlayerForCell(cellEl) {
 function bringDownYodaWin(){
   leaderboard.style.top = '95px';
   leaderboardMessage.innerHTML = 'Win, you have.';
-  imageSlideInYoda.style.top = '100px';
+  container.style.opacity = '0.4'; // we want to make the wheel darker so the leaderboard drop down shows up better.
+}
+
+function bringDownYodaLose(){
+  leaderboard.style.top = '95px';
+  leaderboardMessage.innerHTML = 'Try again, you must.';
   container.style.opacity = '0.4'; // we want to make the wheel darker so the leaderboard drop down shows up better.
 }
 
