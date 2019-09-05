@@ -11,6 +11,15 @@
   color: rgb(237, 237, 12);
 }
 
+#trivia-h2 {
+  font-size: 70px;
+}
+
+#simon-h2 {
+  font-size: 70px;
+  margin-top: 20px;
+}
+
 .about-name {
   font-family: 'Bangers', cursive;
   font-size: 40px;

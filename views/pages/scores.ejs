@@ -13,20 +13,36 @@
     </div>
     <br>
     <div id="score-list">
-      <table id="score-table">
-        <tr>
-          <th>Name</th>
-          <th>Score</th>
-          <th>Date</th>
-        </tr>
-        <tr>
-          <% for (let i = 0; i < scores.length; i++) { %>
-          <td><%= scores[i].username %></td>
-          <td id="score-td"><%= scores[i].score %></td>
-          <td id="date-td"><%= scores[i].date %> </td>
-        </tr>
-        <% } %>
-      </table>
+        <h2 class="main-header" id="trivia-h2">Trivia</h2>
+        <table id="score-table">
+            <tr>
+              <th>Name</th>
+              <th>Score</th>
+              <th>Date</th>
+            </tr>
+            <tr>
+              <% for (let i = 0; i < trivia.length; i++) { %>
+              <td><%= trivia[i].username %></td>
+              <td id="score-td"><%= trivia[i].score %></td>
+              <td id="date-td"><%= trivia[i].date %> </td>
+            </tr>
+            <% } %>
+          </table>
+        <h2 class="main-header" id="simon-h2" >Simon</h2>
+          <table id="score-table">
+            <tr>
+              <th>Name</th>
+              <th>Score</th>
+              <th>Date</th>
+            </tr>
+            <tr>
+              <% for (let i = 0; i < simon.length; i++) { %>
+              <td><%= simon[i].username %></td>
+              <td id="score-td"><%= simon[i].score %></td>
+              <td id="date-td"><%= simon[i].date %> </td>
+            </tr>
+            <% } %>
+          </table>   
     </div>
   </div>
   <%- include('../layout/footer.ejs') %>

@@ -57,7 +57,7 @@ SimonGame.prototype.lose = function() {
   this.isRunning = false;
   $.post('/addScore', {
     username: window.localStorage.getItem('username'),
-    game: 'Simon',
+    game: 'simon',
     score: this.points
   }).done(() => { console.log('done!'); window.location.pathname = '/scores'; });
 }
