@@ -3,6 +3,8 @@
 
 -- \c cfjazz
 
+DROP TABLE highscores;
+
 CREATE TABLE highscores (
   id SERIAL PRIMARY KEY,
   username VARCHAR(255),

@@ -5,11 +5,11 @@
 <% let recentQuestion = []; %>
 
 <% function getUniqueIndex() { %>
-<%  let randomIndex = getRandomNumber(0, dummyData.answers.length - 1); %>
+<%  let randomIndex = getRandomNumber(0, StarWarsData.answers.length - 1); %>
 <%  while (recentQuestion.includes(randomIndex)) { %>
-<%    randomIndex = getRandomNumber(0, dummyData.answers.length); %>
+<%    randomIndex = getRandomNumber(0, StarWarsData.answers.length); %>
 <%  } %>
-<%  if (recentQuestion.length > dummyData.answers.length) { %>
+<%  if (recentQuestion.length > StarWarsData.answers.length) { %>
 <%    recentQuestion.shift(); %>
 <%  } %>
 <%  recentQuestion.push(randomIndex); %>
@@ -17,7 +17,7 @@
 <% } %>
 
 
-<% for (let i = 0; i < dummyData.answers.length; i++) { %>
+<% for (let i = 0; i < StarWarsData.answers.length; i++) { %>
   <% let randomQuestionNumber = getUniqueIndex(); %>
-<button name="answer" value="<%=dummyData.answers[randomQuestionNumber].correct%>"><%= dummyData.answers[randomQuestionNumber].value %></button>
+<button name="answer" value="<%=StarWarsData.answers[randomQuestionNumber].correct%>"><%= StarWarsData.answers[randomQuestionNumber].value %></button>
 <% } %>
