@@ -36,7 +36,7 @@ app.get('/simon', loadSimon);
 app.get('/board', loadBoard);
 app.get('/boardresult', loadBoardResult);
 app.get('/aboutus', loadAboutUs);
-// Input {username: george, score: 5, game: 'trivia'}
+app.get('/timedout', loadTimedOut);
 app.post('/addScore', addScore);
 app.get('*', (req, res) => { res.status(404).render('pages/error') });
 
@@ -50,6 +50,10 @@ function home(req, res) {
 
 function loadAboutUs(req, res) {
   res.render('./pages/aboutus');
+}
+
+function loadTimedOut(req, res) {
+  res.render('./pages/timedout');
 }
 
 function validateAnswer(req, res) {
@@ -85,7 +89,6 @@ function loadBoardResult(req, res) {
 function addScore(req, res) {
   console.log(req.query)
   let sqlInsert = 'INSERT INTO highscores (username, date, score, game) VALUES ($1, $2, $3, $4);'
-  // let sqlInsert = 'INSERT INTO highscores (username, date, score) VALUES ($1, $2, $3);';
   let sqlArray = [
     req.body.username,
     new Date(Date.now()).toDateString(),
@@ -110,28 +113,20 @@ function nextTriviaQuestion(req, res) {
     ? parseInt(req.query.numOfCorrectAnswers)
     : 0;
 
-  if (recentQuestion.length >= 20) {
-    let sqlInsert = 'INSERT INTO highscores (username, date, score, game) VALUES ($1, $2, $3, $4);'
-    // let sqlInsert = 'INSERT INTO highscores (username, date, score) VALUES ($1, $2, $3);'
-    let sqlArray = [req.query.username, new Date(Date.now()).toDateString(), numOfCorrectAnswers, 'trivia'];
-    client.query(sqlInsert, sqlArray);
-    res.redirect('/scores');
-  } else {
-    let getRandomQuestion = getUniqueIndex(recentQuestion);
-    let singleQuestion = StarWarsData[getRandomQuestion];
-    superagent
-      .post('https://api.funtranslations.com/translate/yoda.json')
-      .send({ text: singleQuestion.question })
-      .set('X-Funtranslations-Api-Secret', process.env.YODA_API)
-      .set('Accept', 'application/json')
-      .then(responseFromSuper => res.render('./pages/trivia',
-        { 
-          questionData: responseFromSuper.body.contents.translated,
-          StarWarsData: singleQuestion,
-          recentQuestion: recentQuestion,
-          numOfCorrectAnswers: numOfCorrectAnswers
-        }));
-  }
+  let getRandomQuestion = getUniqueIndex(recentQuestion);
+  let singleQuestion = StarWarsData[getRandomQuestion];
+  superagent
+    .post('https://api.funtranslations.com/translate/yoda.json')
+    .send({ text: singleQuestion.question })
+    .set('X-Funtranslations-Api-Secret', process.env.YODA_API)
+    .set('Accept', 'application/json')
+    .then(responseFromSuper => res.render('./pages/trivia',
+      { 
+        questionData: responseFromSuper.body.contents.translated,
+        StarWarsData: singleQuestion,
+        recentQuestion: recentQuestion,
+        numOfCorrectAnswers: numOfCorrectAnswers
+      }));
 }
 
 function loadScores(req, res) {

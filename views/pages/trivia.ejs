@@ -6,7 +6,6 @@
 
 <body>
   <% let recentQuestionJson = JSON.stringify(recentQuestion) %>
-  <h2 id="question-title">Number of questions left: <%= (21 - recentQuestion.length) %></h2>
   <div id="lightsaber-timer">
     <%- include('../layout/timer.ejs') %>
   </div>
@@ -37,6 +36,13 @@
   <h1 class="main-header" id="trivia-header">Yoda's Trivia</h1>
   <%- include('../layout/footer.ejs') %>
   <script src="js/timer.js"></script>
+  <script lang="javascript">
+    const score = '<%= numOfCorrectAnswers %>';
+    if (score) {
+      window.localStorage.setItem('score', score);
+    }
+    localStorage.setItem('trivia_timer', -1);
+  </script>
 </body>
 
 </html>
